@@ -37,10 +37,9 @@ function App() {
   {
     title: 'Statistics & Impact 2',
     description: 'View your environmental impact 22222',
-    <img src={screenshots[currentScreenshot].image}
+    img src={screenshots[currentScreenshot].image}
     className="max-w-full max-h-full object-contain"
     alt={screenshots[currentScreenshot].title}
-    />
   },    
 
 
