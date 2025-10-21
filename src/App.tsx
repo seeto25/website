@@ -223,7 +223,7 @@ function App() {
             </div>
           </div>
             <div className="flex justify-center">
-            <button onClick={() => window.location.href = BETA_URL} className="mt-16 bg-brand-green hover:bg-brand-dark text-white px-10 py-4 rounded-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 font-semibold text-lg">
+            <button onClick={() => window.location.href = BETA_URL} className="mt-12 bg-brand-green hover:bg-brand-dark text-white px-10 py-4 rounded-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 font-semibold text-lg">
               Start Free - Beta
             </button>
           </div>
