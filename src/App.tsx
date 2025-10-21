@@ -168,7 +168,7 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-brand-dark mb-4">Credit System</h3>
               <p className="text-brand-dark/80 leading-relaxed">
-                Earn credits by driving others. Use credits to ride along. Everyone takes turns driving, making it completely fair and balanced.
+                No paying needed. Earn credits by driving others. Use credits to ride along. Everyone takes turns driving, making it completely fair and balanced.
               </p>
             </div>
 
