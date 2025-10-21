@@ -32,7 +32,7 @@ function App() {
       {
     title: 'Statistics & Impact',
     description: 'View your environmental impact and savings over time',
-    image: '/images/stats-dashboard.jpg'
+    image: 'images/stats-dashboard.jpg'
   },
     {
       title: 'Group Management',
