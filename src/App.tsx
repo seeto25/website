@@ -283,7 +283,7 @@ function App() {
                   <img
                     src={screenshots[currentScreenshot].image}
                     alt={screenshots[currentScreenshot].title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
 
