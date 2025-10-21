@@ -34,7 +34,7 @@ function App() {
     description: 'View your environmental impact and savings over time',
     image: 'images/stats-dashboard.png'
   },
-    {
+  {
     title: 'Statistics & Impact 2',
     description: 'View your environmental impact 22222',
     <img 
