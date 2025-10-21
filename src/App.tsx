@@ -402,7 +402,7 @@ function App() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-brand-dark mb-6">Ready to Transform Your Commute?</h2>
           <p className="text-xl text-brand-dark/80 mb-10">
-            Join thousands of organizations already saving money and reducing their environmental impact with Seeto
+            Join the community of saving money and reducing their environmental impact with Seeto
           </p>
           <div className="flex justify-center">
             <button onClick={() => window.location.href = BETA_URL} className="bg-brand-green hover:bg-brand-dark text-white px-10 py-4 rounded-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 font-semibold text-lg">
