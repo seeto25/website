@@ -119,7 +119,7 @@ function App() {
             </p>
             <div className="flex gap-4">
               <button onClick={() => window.location.href = BETA_URL} className="bg-white hover:bg-brand-light text-brand-dark px-6 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-300 border-2 border-brand-light hover:border-brand-green hover:-translate-y-0.5 font-semibold text-base md:text-lg">
-                Start Free Beta Version
+                Start Free - Beta
               </button>
             </div>
           </div>
