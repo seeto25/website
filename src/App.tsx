@@ -397,7 +397,7 @@ function App() {
           </div>
         </div>
       </section>
-
+      
       <section className="py-24 bg-gradient-to-b from-white to-brand-lightest">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-brand-dark mb-6">Ready to Transform Your Commute?</h2>
