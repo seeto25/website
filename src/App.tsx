@@ -112,7 +112,7 @@ function App() {
               Fair Carpooling Made Simple
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-dark mb-4 md:mb-6 leading-tight">
-              Share Rides.<br />Save Money.<br />Save the Planet.
+              Share Rides.<br />Save Money.<br />No extra paying.<br />Save the Planet.
             </h1>
             <p className="text-lg md:text-xl text-brand-dark/80 mb-6 md:mb-8 leading-relaxed">
               Seeto revolutionizes carpooling with an innovative credit system. Drive together, earn credits, and make every journey count for your team, sports club, or organization.
