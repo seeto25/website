@@ -419,7 +419,7 @@ function App() {
 <img
   src={LOGO_PATH}
   alt="Seeto Logo"
-  className="h-8 drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
+  className="h-8 drop-shadow-[0_0_16px_rgba(255,255,255,0.9)]"
 />
 
 
