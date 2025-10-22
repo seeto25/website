@@ -420,7 +420,7 @@ function App() {
                 src={LOGO_PATH}
                 alt="Seeto Logo"
                 className="h-8 p-1 bg-white rounded-md"
-              /> 
+              />
               <p className="text-brand-light text-sm">
                 Fair carpooling for teams and organizations
               </p>
