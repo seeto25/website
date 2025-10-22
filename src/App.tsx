@@ -284,7 +284,7 @@ function App() {
           <div className="mt-20 max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl p-4 border border-brand-light">
               <div className="relative">
-                <div className="aspect-video bg-gradient-to-br from-brand-lightest to-brand-light rounded-xl overflow-hidden">   
+                <div className="aspect-video relative rounded-xl overflow-hidden bg-brand-green">   
                   <img
                     src={screenshots[currentScreenshot].image}
                     alt={screenshots[currentScreenshot].title}
