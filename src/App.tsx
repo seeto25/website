@@ -135,10 +135,10 @@ function App() {
                   <div className="text-xl md:text-2xl font-bold text-brand-dark mb-1">
                       Düsseldorf Hbf → <br />
                       TH Köln Campus Deutz
-                    </div>
+                    </div> 
 <div className="flex items-center gap-1.5 md:gap-2 mt-4 flex-wrap">
                       {/* Früher grün → jetzt rot */}
-                      <div className="w-8 h-8 md:w-10 md:h-10 bg-red-500 border border-brand-light rounded"></div>
+                      <div className="w-8 h-8 md:w-10 md:h-10 bg-red-500 border-2 border-gray-300 rounded"></div>
                       <div className="w-8 h-8 md:w-10 md:h-10 bg-red-500 border-2 border-gray-300 rounded"></div>
                     
                       {/* Früher weiß → jetzt grün */}
