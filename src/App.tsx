@@ -286,6 +286,7 @@ function App() {
               <div className="relative">
                 <div className="aspect-video bg-gradient-to-br from-brand-dark/90 to-brand-dark/60 rounded-xl overflow-hidden">
 
+                  
                   <img
                     src={screenshots[currentScreenshot].image}
                     alt={screenshots[currentScreenshot].title}
