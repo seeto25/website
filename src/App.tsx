@@ -12,32 +12,32 @@ function App() {
     {
       title: 'Home',
       description: 'View all upcoming trips, and recent activity at a glance',
-      image: 'images/Home-zugeklappt.png'
+      image: '/images/Home-zugeklappt.png'
     },
     {
       title: 'Create a Trip',
       description: 'Easily schedule new rides with destination, time, and available seats',
-      image: 'images/Home.png'
+      image: '/images/Home.png'
     },
     {
       title: 'Browse Available Rides',
       description: 'Find and join rides that match your schedule and route',
-      image: 'images/Home-Fahrtsuchen.png'
+      image: '/images/Home-Fahrtsuchen.png'
     },
     {
       title: 'Credits & Statistics',
       description: 'Track your earned and spent credits',
-      image: 'images/stats-fairness.png'
+      image: '/images/stats-fairness.png'
     },
       {
     title: 'Statistics & Impact',
     description: 'View your environmental impact and savings over time',
-    image: 'images/stats-dashboard.png'
+    image: '/images/stats-dashboard.png'
   },
     {
       title: 'Group Management',
       description: 'Manage your team members, view group statistics, and invite new participants',
-      image: 'images/groups.png'
+      image: '/images/groups.png'
     }
   ];
 
