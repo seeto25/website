@@ -150,7 +150,6 @@ function App() {
                         3 seats available
                       </span>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
