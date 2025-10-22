@@ -137,15 +137,11 @@ function App() {
                       TH Köln Campus Deutz
                     </div>
                   <div className="flex items-center gap-1.5 md:gap-2 mt-4 flex-wrap">
-                    {/* Früher grün → jetzt rot */}
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-red-500 border-2 border-brand-dark rounded"></div>
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-red-500 border-2 border-brand-dark rounded"></div>
-                  
-                    {/* Früher weiß → jetzt grün */}
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-green border-2 border-brand-dark rounded"></div>
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-green border-2 border-brand-dark rounded"></div>
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-green border-2 border-brand-dark rounded"></div>
-                  
                     <span className="text-brand-dark ml-2 font-medium text-sm md:text-base">
                       3 seats available
                     </span> 
