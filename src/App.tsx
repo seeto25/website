@@ -416,7 +416,12 @@ function App() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
-              <img src={LOGO_PATH} alt="Seeto Logo" className="h-8" />
+              <img
+  src={LOGO_PATH}
+  alt="Seeto Logo"
+  className="h-8 p-1 bg-white rounded-md"
+/>
+
               <p className="text-brand-light text-sm">
                 Fair carpooling for teams and organizations
               </p>
