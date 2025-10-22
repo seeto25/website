@@ -149,7 +149,7 @@ function App() {
   <span className="text-brand-dark ml-2 font-medium text-sm md:text-base">
     3 seats available
   </span>
-</div>
+</div> 
 
                 </div>
               </div>
