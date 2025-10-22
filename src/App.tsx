@@ -115,7 +115,7 @@ function App() {
               Share Rides.<br />Save Money.<br />Save the Planet.
             </h1>
             <p className="text-lg md:text-xl text-brand-dark/80 mb-6 md:mb-8 leading-relaxed">
-              Seeto revolutionizes carpooling with an innovative credit system. Drive together, earn credits, and make every journey count for your team, sports club, or organization.
+              Seeto revolutionizes carpooling with an innovative credit system. Drive together, earn credits, and make every journey count for your team, sports club, or organization. No extra paying, just driving together.
             </p>
             <div className="flex gap-4">
               <button onClick={() => window.location.href = BETA_URL} className="bg-white hover:bg-brand-light text-brand-dark px-6 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-300 border-2 border-brand-light hover:border-brand-green hover:-translate-y-0.5 font-semibold text-base md:text-lg">
