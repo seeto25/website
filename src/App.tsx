@@ -322,7 +322,7 @@ function App() {
                       onClick={() => setCurrentScreenshot(index)}
                       className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                         index === currentScreenshot
-                          ? 'bg-brand-grey w-8'
+                          ? 'bg-brand-green w-8'
                           : 'bg-brand-light hover:bg-brand-green/50'
                       }`}
                     />
