@@ -1,4 +1,4 @@
-import { Car, Users, Leaf, TrendingDown, CreditCard, BarChart3, ChevronLeft, ChevronRight, CheckCircle, Menu, X } from 'lucide-react';
+import { Car, Users, Leaf, TrendingUp, CreditCard, BarChart3, ChevronLeft, ChevronRight, CheckCircle, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const LOGO_PATH = '/images/seeto-logo.png';
@@ -175,7 +175,7 @@ function App() {
 
             <div className="bg-gradient-to-br from-brand-lightest to-brand-light rounded-2xl p-8 border border-brand-light hover:border-brand-green hover:-translate-y-1 transition-all duration-300 group">
               <div className="bg-brand-green w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <TrendingDown className="w-7 h-7 text-white" />
+                <TrendingUp className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-brand-dark mb-4">Save Money</h3>
               <p className="text-brand-dark/80 leading-relaxed">
