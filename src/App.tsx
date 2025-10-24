@@ -10,7 +10,7 @@ function App() {
 
   const screenshots = [
     {
-      title: 'Home',
+      title: 'Home', 
       description: 'View all upcoming trips, and recent activity at a glance',
       image: '/images/Home-zugeklappt.png'
     },
