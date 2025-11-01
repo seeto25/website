@@ -50,7 +50,6 @@ export default function Legalnotice() {
             </p>
           </div>
 
-
           <div>
             <p className="text-sm text-brand-dark/60">
               Last updated: November 2025
