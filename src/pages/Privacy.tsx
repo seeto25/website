@@ -23,7 +23,7 @@ export default function Privacy() {
 
         <div className="bg-white rounded-2xl p-8 md:p-12 border border-brand-light shadow-lg space-y-8">
           <div>
-            <h2 className="text-2xl font-bold text-brand-dark mb-4">Legal notice</h2>
+            <h2 className="text-2xl font-bold text-brand-dark mb-4">Information pursuant to § 5 TMG</h2>
             <p className="text-brand-dark/80 leading-relaxed">
             Information pursuant to § 5 TMG (German Telemedia Act)
             kowuma GbR
