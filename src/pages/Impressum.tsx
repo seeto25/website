@@ -1,7 +1,7 @@
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-export default function Privacy() {
+export default function Impressum() {
   const navigate = useNavigate();
 
   return (
