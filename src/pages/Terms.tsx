@@ -137,7 +137,8 @@ export default function Terms() {
               <div>We reserve the right to amend this Privacy Policy to ensure it always complies with current legal requirements or to reflect changes to our services.</div>
             </div>
 
-
+          </div>
+        </div>
 
           <div>
             <p className="text-sm text-brand-dark/60">
