@@ -1,7 +1,7 @@
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-export default function LegalNotice() {
+export default function Legalnotice() {
   const navigate = useNavigate();
 
   return (
