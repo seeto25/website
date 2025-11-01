@@ -19,14 +19,12 @@ export default function Privacy() {
       </nav>
 
       <section className="max-w-4xl mx-auto px-6 py-16 md:py-24">
-        <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-8">Privacy Policy</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-8">Legal notice</h1>
 
         <div className="bg-white rounded-2xl p-8 md:p-12 border border-brand-light shadow-lg space-y-8">
           <div>
-            <h2 className="text-2xl font-bold text-brand-dark mb-4">Privacy Policy Content</h2>
+            <h2 className="text-2xl font-bold text-brand-dark mb-4">Legal notice</h2>
             <p className="text-brand-dark/80 leading-relaxed">
-              This is a placeholder for the Privacy Policy content. Please provide the actual policy text here.
-            Legal notice
             Information pursuant to § 5 TMG (German Telemedia Act)
             kowuma GbR
             Represented by: Shpat Haxhimusa
@@ -43,8 +41,6 @@ export default function Privacy() {
             Shpat Haxhimusa
             Betzdorfer Str. 2
             50667 Cologne
-            
-            
             </p>
           </div>
 
