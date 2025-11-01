@@ -131,8 +131,8 @@ export default function Terms() {
               <h2 className="text-xl font-semibold text-brand-dark mb-2">10. Changes to this Privacy Policy</h2>
               <div>We reserve the right to amend this Privacy Policy to ensure it always complies with current legal requirements or to reflect changes to our services.</div>
             </div>
-          </div>
-        </div>
+
+
           <div>
             <p className="text-sm text-brand-dark/60">
               Last updated: November 2025
