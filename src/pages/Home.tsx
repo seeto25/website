@@ -430,8 +430,8 @@ export default function Home() {
               </p>
             </div>
             <div className="flex gap-6 text-brand-light text-sm">
-              <button onClick={() => navigate('/privacy')} className="hover:text-white transition-colors cursor-pointer">Legal notice</button>
-              <button onClick={() => navigate('/terms')} className="hover:text-white transition-colors cursor-pointer">Terms</button>
+              <button onClick={() => navigate('/impressum')} className="hover:text-white transition-colors cursor-pointer">Legal notice</button>
+              <button onClick={() => navigate('/privacy')} className="hover:text-white transition-colors cursor-pointer">Privacy</button>
               <a href="mailto:shpath.seeto@hotmail.com?subject=Kontakt%20über%20Website%20-%20%5BZweck%5D" className="hover:text-white transition-colors">Contact</a>
             </div>
           </div>
