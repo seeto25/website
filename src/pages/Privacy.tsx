@@ -26,6 +26,25 @@ export default function Privacy() {
             <h2 className="text-2xl font-bold text-brand-dark mb-4">Privacy Policy Content</h2>
             <p className="text-brand-dark/80 leading-relaxed">
               This is a placeholder for the Privacy Policy content. Please provide the actual policy text here.
+            Legal notice
+            Information pursuant to § 5 TMG (German Telemedia Act)
+            kowuma GbR
+            Represented by: Shpat Haxhimusa
+            Betzdorfer Str. 2
+            50667 Cologne
+            Germany
+            Contact:
+            Email: shpath.seeto@hotmail.de
+            VAT ID:
+            No VAT identification number available.
+            Register entry:
+            No register entry available.
+            Responsible for content according to § 55 (2) RStV:
+            Shpat Haxhimusa
+            Betzdorfer Str. 2
+            50667 Cologne
+            
+            
             </p>
           </div>
 
