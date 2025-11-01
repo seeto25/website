@@ -23,26 +23,33 @@ export default function Privacy() {
 
         <div className="bg-white rounded-2xl p-8 md:p-12 border border-brand-light shadow-lg space-y-8">
           <div>
-            <h2 className="text-2xl font-bold text-brand-dark mb-4">Information pursuant to § 5 TMG</h2>
-            <p className="text-brand-dark/80 leading-relaxed">
-            Information pursuant to § 5 TMG (German Telemedia Act)
-            kowuma GbR
-            Represented by: Shpat Haxhimusa
-            Betzdorfer Str. 2
-            50667 Cologne
-            Germany
-            Contact:
-            Email: shpath.seeto@hotmail.de
-            VAT ID:
-            No VAT identification number available.
-            Register entry:
-            No register entry available.
-            Responsible for content according to § 55 (2) RStV:
-            Shpat Haxhimusa
-            Betzdorfer Str. 2
-            50667 Cologne
+            <h2 className="text-2xl font-bold text-brand-dark mb-4">
+              Information pursuant to § 5 TMG
+            </h2>
+            <p className="text-brand-dark/80 leading-relaxed space-y-2">
+              <span block>Information pursuant to § 5 TMG (German Telemedia Act)</span><br />
+              <span block>kowuma GbR</span><br />
+              <span block>Represented by: Shpat Haxhimusa</span><br />
+              <span block>Betzdorfer Str. 2</span><br />
+              <span block>50667 Cologne</span><br />
+              <span block>Germany</span><br /><br />
+          
+              <span block><strong>Contact:</strong></span><br />
+              <span block>Email: shpath.seeto@hotmail.de</span><br /><br />
+          
+              <span block><strong>VAT ID:</strong></span><br />
+              <span block>No VAT identification number available.</span><br /><br />
+          
+              <span block><strong>Register entry:</strong></span><br />
+              <span block>No register entry available.</span><br /><br />
+          
+              <span block><strong>Responsible for content according to § 55 (2) RStV:</strong></span><br />
+              <span block>Shpat Haxhimusa</span><br />
+              <span block>Betzdorfer Str. 2</span><br />
+              <span block>50667 Cologne</span>
             </p>
           </div>
+
 
           <div>
             <p className="text-sm text-brand-dark/60">
