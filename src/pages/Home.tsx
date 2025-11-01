@@ -1,16 +1,18 @@
 import { Car, Users, Leaf, TrendingUp, CreditCard, BarChart3, ChevronLeft, ChevronRight, CheckCircle, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const LOGO_PATH = '/images/seeto-logo.png';
 const BETA_URL = "https://seeto.onrender.com";
 
-function App() {
+export default function Home() {
+  const navigate = useNavigate();
   const [currentScreenshot, setCurrentScreenshot] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const screenshots = [
     {
-      title: 'Home', 
+      title: 'Home',
       description: 'View all upcoming trips, and recent activity at a glance',
       image: '/images/Home-zugeklappt.png'
     },
@@ -48,6 +50,7 @@ function App() {
   const previousScreenshot = () => {
     setCurrentScreenshot((prev) => (prev - 1 + screenshots.length) % screenshots.length);
   };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-brand-lightest to-brand-light">
       <nav className="bg-white/80 backdrop-blur-sm border-b border-brand-light sticky top-0 z-50">
@@ -144,7 +147,7 @@ function App() {
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-green border-2 border-brand-dark rounded"></div>
                     <span className="text-brand-dark ml-2 font-medium text-sm md:text-base">
                       3 seats available
-                    </span> 
+                    </span>
                   </div>
                 </div>
               </div>
@@ -398,7 +401,7 @@ function App() {
           </div>
         </div>
       </section>
-      
+
       <section className="py-24 bg-gradient-to-b from-white to-brand-lightest">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-brand-dark mb-6">Ready to Transform Your Commute?</h2>
@@ -427,8 +430,8 @@ function App() {
               </p>
             </div>
             <div className="flex gap-6 text-brand-light text-sm">
-              <a href="#privacy" className="hover:text-white transition-colors">Privacy</a>
-              <a href="#terms" className="hover:text-white transition-colors">Terms</a>
+              <button onClick={() => navigate('/privacy')} className="hover:text-white transition-colors cursor-pointer">Privacy</button>
+              <button onClick={() => navigate('/terms')} className="hover:text-white transition-colors cursor-pointer">Terms</button>
               <a href="mailto:shpath.seeto@hotmail.com?subject=Kontakt%20über%20Website%20-%20%5BZweck%5D" className="hover:text-white transition-colors">Contact</a>
             </div>
           </div>
@@ -440,5 +443,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
