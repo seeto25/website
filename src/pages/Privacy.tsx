@@ -118,7 +118,7 @@ export default function Terms() {
                 <div>• Right to object to processing (Art. 21 GDPR)</div>
               </div>
               <div>To exercise these rights, you can contact us at any time:</div>
-              <div>📧 shpath.seeto@hotmail.de</div>
+              <div>shpath.seeto@hotmail.de</div>
             </div>
         
             <div>
