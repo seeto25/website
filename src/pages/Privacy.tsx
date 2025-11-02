@@ -47,6 +47,13 @@ export default function Terms() {
                 <div>When you access our website <a href="https://seeto.onrender.com" className="text-blue-600">https://seeto.onrender.com</a>, technical data is automatically collected by the hosting service Render (e.g., IP address, time of access, browser type).</div>
                 <div>This data is necessary to ensure the secure operation of the website and is automatically deleted as soon as it is no longer required for this purpose.</div>
                 <div>The legal basis is Article 6(1)(f) GDPR (legitimate interest in secure and stable operation).</div>
+
+  
+              <div>When you visit our website https://seeto.onrender.com,
+ technical information (e.g., IP address, time of access, browser type) is automatically collected by the hosting provider.
+This data is necessary to ensure the functionality and security of the website.
+The legal basis is Art. 6 (1) lit. f GDPR (legitimate interest in secure and stable operation).</div>
+                
               </div>
         
               <div className="ml-4 mt-3">
