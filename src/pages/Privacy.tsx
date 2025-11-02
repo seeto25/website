@@ -6,7 +6,7 @@ export default function Terms() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className="min-h-screen bg-gradient-to-b from-brand-lightest to-brand-light">
