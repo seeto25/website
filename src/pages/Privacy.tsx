@@ -70,13 +70,8 @@ The legal basis is Art. 6 (1) lit. f GDPR (legitimate interest in secure and sta
         
             <div>
               <h2 className="text-xl font-semibold text-brand-dark mb-2">4. Data Storage and Processing</h2>
-              <div>Our data is processed by the following providers:</div>
-        
-
-<div>Your personal data is processed and stored on servers belonging to external service providers (cloud infrastructure). These providers support us in the technical provision of the website and database.
-
+              <div>Your personal data is processed and stored on servers belonging to external service providers (cloud infrastructure). These providers support us in the technical provision of the website and database.
 This may involve processing in third countries (e.g., outside the EU). In this case, we ensure that an adequate level of data protection is guaranteed in accordance with Art. 46 GDPR (e.g., through EU standard contractual clauses).</div>
-              
             </div>
         
             <div>
