@@ -76,9 +76,8 @@ This may involve processing in third countries (e.g., outside the EU). In this c
         
             <div>
               <h2 className="text-xl font-semibold text-brand-dark mb-2">5. Contacting Us</h2>
-              <div>You can contact us by email via the "Contact" button on our website.</div>
-              <div>When you contact us, we process the data you provide (e.g., name, email address, message content) solely for the purpose of handling your inquiry.</div>
-              <div>The legal basis for this processing is Article 6(1)(a) GDPR (consent) or Article 6(1)(b) GDPR (performance of a contract).</div>
+              <div>If you contact us via the “Contact” button, your local email application will open. In this case, we will process the data you voluntarily provide (e.g., name, email address, message content) exclusively for the purpose of processing your request.
+Legal basis: Art. 6 (1) (a) GDPR (consent) or Art. 6 (1) (b) GDPR (performance of a contract).</div>
             </div>
         
             <div>
