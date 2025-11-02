@@ -56,7 +56,7 @@ The legal basis is Art. 6 (1) lit. f GDPR (legitimate interest in secure and sta
                   <div>• Name</div>
                   <div>• Email address</div>
                 </div>
-                <div>This data is necessary to enable you to access the platform and its functions (e.g., carpool management).
+                <div>This data is necessary to enable you to access the platform and its functions (e.g. carpool management).
 The legal basis is Art. 6(1)(b) GDPR (performance of a contract).</div>
               </div>
         
