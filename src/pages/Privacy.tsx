@@ -36,7 +36,7 @@ export default function Terms() {
         
             <div>
               <h2 className="text-xl font-semibold text-brand-dark mb-2">2. General Information on Data Processing</h2>
-              <div>We take the protection of your personal data very seriously. Personal data is only processed to the extent necessary. Processing is based on the General Data Protection Regulation (GDPR) and the German Federal Data Protection Act (BDSG).</div>
+              <div>We take the protection of your personal data very seriously. Personal data is only processed to the extent necessary and exclusively on the basis of the General Data Protection Regulation (GDPR) and the Federal Data Protection Act (BDSG).</div>
             </div>
         
             <div>
