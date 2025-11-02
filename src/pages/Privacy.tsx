@@ -83,11 +83,10 @@ This may involve processing in third countries (e.g., outside the EU). In this c
         
             <div>
               <h2 className="text-xl font-semibold text-brand-dark mb-2">6. Cookies and Tracking</h2>
-              <div>Our website does not use its own cookies or tracking tools.</div>
-              <div>However, the hosting provider may set technically necessary cookies to ensure the website's functionality.</div>
-              <div>These are based on Article 6(1)(f) GDPR (legitimate interest).</div>
+              <div>Our website does not use its own cookies or tracking tools.
+However, technically necessary cookies or comparable temporary files may be set by the hosting service provider to ensure the functionality of the site.
+Legal basis: Art. 6 (1) lit. f GDPR.</div>
             </div>
-        
             <div>
               <h2 className="text-xl font-semibold text-brand-dark mb-2">7. Data Retention Period</h2>
               <div>Personal data will be deleted as soon as the purpose for which it was processed no longer applies or you withdraw your consent, unless statutory retention periods apply.</div>
