@@ -72,20 +72,6 @@ The legal basis is Art. 6 (1) lit. f GDPR (legitimate interest in secure and sta
               <h2 className="text-xl font-semibold text-brand-dark mb-2">4. Data Storage and Processing</h2>
               <div>Our data is processed by the following providers:</div>
         
-              <div className="ml-4 mt-2">
-                <h3 className="text-lg font-medium text-brand-dark mb-1">Render (Web App Hosting)</h3>
-                <div>Provider: Render.com, Inc., 111 Sutter Street, Suite 1300, San Francisco, CA 94104, USA</div>
-                <div>Render is a data processor within the meaning of Article 28 GDPR.</div>
-                <div>Data may be processed in third countries (e.g., the USA). Render is committed to complying with the EU Standard Contractual Clauses.</div>
-              </div>
-        
-              <div className="ml-4 mt-3">
-                <h3 className="text-lg font-medium text-brand-dark mb-1">Supabase (Database and Authentication)</h3>
-                <div>Provider: Supabase, Inc., 970 Toa Payoh North #07-04, Singapore 318992</div>
-                <div>Supabase processes user data to provide database functions.</div>
-                <div>Here, too, processing is carried out in accordance with GDPR Standard Contractual Clauses.</div>
-              </div>
-
 
 <div>Your personal data is processed and stored on servers belonging to external service providers (cloud infrastructure). These providers support us in the technical provision of the website and database.
 
