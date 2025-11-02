@@ -62,9 +62,9 @@ The legal basis is Art. 6(1)(b) GDPR (performance of a contract).</div>
         
               <div className="ml-4 mt-3">
                 <h3 className="text-lg font-medium text-brand-dark mb-1">c) Trip data</h3>
-                <div>During use, trip data that you provide yourself (e.g., start time, destination, available seats) is also stored.</div>
-                <div>This data is used exclusively for facilitating and managing carpools.</div>
-                <div>Legal basis: Article 6(1)(b) GDPR.</div>
+                <div>When using the service, additional trip data that you provide yourself (e.g., start time, destination, available seats) is also stored.
+This data is used exclusively for the purpose of using the carpooling functions.
+Legal basis: Art. 6(1)(b) GDPR.</div>
               </div>
             </div>
         
