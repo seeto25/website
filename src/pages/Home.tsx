@@ -65,7 +65,7 @@ export default function Home() {
               <a href="#how-it-works" className="text-brand-dark hover:text-brand-green transition-colors font-medium">How It Works</a>
               <a href="#benefits" className="text-brand-dark hover:text-brand-green transition-colors font-medium">Benefits</a>
               <button onClick={() => window.location.href = BETA_URL} className="bg-brand-green hover:bg-brand-dark text-white px-6 py-2.5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 font-medium">
-                Start Free (Beta Version)
+                Start Free (Beta)
               </button>
             </div>
 
@@ -101,7 +101,7 @@ export default function Home() {
                 Benefits
               </a>
               <button onClick={() => window.location.href = BETA_URL} className="w-full bg-brand-green hover:bg-brand-dark text-white px-6 py-2.5 rounded-lg transition-all duration-300 font-medium">
-                Start Free (Beta Version)
+                Start Free (Beta)
               </button>
             </div>
           )}
