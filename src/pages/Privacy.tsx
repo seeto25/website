@@ -58,11 +58,6 @@ The legal basis is Art. 6 (1) lit. f GDPR (legitimate interest in secure and sta
                 </div>
                 <div>This data is required to grant you access to the platform and its functions (creating carpools, viewing trips, etc.).</div>
                 <div>The legal basis is Article 6(1)(b) GDPR (performance of a contract).</div>
-
-              <div>Your personal data is processed and stored on servers belonging to external service providers (cloud infrastructure). These providers support us in the technical provision of the website and database.
-
-This may involve processing in third countries (e.g., outside the EU). In this case, we ensure that an adequate level of data protection is guaranteed in accordance with Art. 46 GDPR (e.g., through EU standard contractual clauses).</div>
-                
               </div>
         
               <div className="ml-4 mt-3">
@@ -90,6 +85,12 @@ This may involve processing in third countries (e.g., outside the EU). In this c
                 <div>Supabase processes user data to provide database functions.</div>
                 <div>Here, too, processing is carried out in accordance with GDPR Standard Contractual Clauses.</div>
               </div>
+
+
+<div>Your personal data is processed and stored on servers belonging to external service providers (cloud infrastructure). These providers support us in the technical provision of the website and database.
+
+This may involve processing in third countries (e.g., outside the EU). In this case, we ensure that an adequate level of data protection is guaranteed in accordance with Art. 46 GDPR (e.g., through EU standard contractual clauses).</div>
+              
             </div>
         
             <div>
