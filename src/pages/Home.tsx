@@ -288,6 +288,7 @@ export default function Home() {
           <div className="mt-20 max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl p-4 border border-brand-light">
               <div className="relative">
+                {/* white gleich farbe neben den screenshot innerhalb container */}
                 <div className="aspect-video white rounded-xl overflow-hidden">
                   <img
                     src={screenshots[currentScreenshot].image}
