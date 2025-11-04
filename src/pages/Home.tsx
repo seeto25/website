@@ -288,7 +288,7 @@ export default function Home() {
           <div className="mt-20 max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl p-4 border border-brand-light">
               <div className="relative">
-                <div className="aspect-video bg-brand-green/80 rounded-xl overflow-hidden">
+                <div className="aspect-video white rounded-xl overflow-hidden">
                   <img
                     src={screenshots[currentScreenshot].image}
                     alt={screenshots[currentScreenshot].title}
