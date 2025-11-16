@@ -40,7 +40,7 @@ export default function Legalnotice() {
               <span block>Germany</span><br /><br />
           
               <span block><strong>Contact:</strong></span><br />
-              <span block>Email: shpath.seeto@hotmail.de</span><br /><br />
+              <span block>Email: kontakt.seeto@hotmail.com</span><br /><br />
           
               <span block><strong>VAT ID:</strong></span><br />
               <span block>No VAT identification number available.</span><br /><br />

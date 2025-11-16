@@ -428,12 +428,12 @@ export default function Home() {
               />
               <p className="text-brand-light text-sm">
                 Fair carpooling for teams and organizations
-              </p>
+                </p>
             </div>
             <div className="flex gap-6 text-brand-light text-sm">
               <button onClick={() => navigate('/legalnotice')} className="hover:text-white transition-colors cursor-pointer">Legal notice</button>
               <button onClick={() => navigate('/privacy')} className="hover:text-white transition-colors cursor-pointer">Privacy</button>
-              <a href="mailto:shpath.seeto@hotmail.com?subject=Kontakt%20über%20Website%20-%20%5BZweck%5D" className="hover:text-white transition-colors">Contact</a>
+              <a href="mailto:kontakt.seeto@hotmail.com?subject=Kontakt%20über%20Website%20-%20%5BZweck%5D" className="hover:text-white transition-colors">Contact</a>
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-6 text-center text-brand-light text-sm">

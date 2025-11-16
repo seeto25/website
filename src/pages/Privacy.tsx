@@ -31,7 +31,7 @@ export default function Terms() {
               <div>Represented by: Shpat Haxhimusa</div>
               <div>Betzdorfer Str. 2</div>
               <div>50667 Cologne, Germany</div>
-              <div>Email: shpath.seeto@hotmail.de</div>
+              <div>Email: kontakt.seeto@hotmail.com</div>
             </div>
         
             <div>
@@ -103,7 +103,7 @@ Legal basis: Art. 6 (1) lit. f GDPR.</div>
                 <div>• Right to object to processing (Art. 21 GDPR)</div>
               </div>
               <div>To exercise these rights, you can contact us at any time:</div>
-              <div>shpath.seeto@hotmail.de</div>
+              <div>kontakt.seeto@hotmail.com</div>
             </div>
         
             <div>
