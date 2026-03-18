@@ -147,7 +147,7 @@ export const translations = {
       title: 'Warum Seeto?',
       subtitle: 'Unsere innovative Plattform macht Carsharing fair, effizient und lohnend für alle',
       creditSystem: {
-        title: 'Credit System',
+        title: 'Credits System',
         description: 'Keine Bezahlung nötig. Verdiene Credits, indem du andere fährst. Nutze Credits, um mitzufahren. Jeder fährt abwechselnd, was es komplett fair und ausgewogen macht.'
       },
       saveMoney: {
@@ -168,7 +168,7 @@ export const translations = {
       },
       noCar: {
         title: 'Kein Auto? Kein Problem',
-        description: 'Studierende und Nicht-Autobesitzer können Credits kaufen, um teilzunehmen. Jeder ist in der nachhaltigen Mobilitätslösung eingeschlossen.'
+        description: 'Studierende und Autolose können demnächst Credits kaufen, um teilzunehmen. Jeder ist in der nachhaltigen Mobilitätslösung eingeschlossen.'
       }
     },
     howItWorks: {
