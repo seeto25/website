@@ -56,10 +56,10 @@ export default function Home() {
             <X className="w-4 h-4" />
           </button>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center scale-75">
             <button
               onClick={() => window.location.href = BETA_URL}
-              className="relative bg-red-500 hover:bg-red-600 text-white font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-2xl border-4 border-brand-dark px-8 py-4 mb-2"
+              className="relative bg-brand-green hover:bg-brand-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-2xl border-3 border-brand-dark px-6 py-3 mb-1"
               style={{
                 clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
               }}
@@ -70,10 +70,10 @@ export default function Home() {
                   clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
                 }}
               ></div>
-              <div className="relative flex items-center gap-3">
-                <span className="text-2xl tracking-wide">STARTEN</span>
+              <div className="relative flex items-center gap-2">
+                <span className="text-lg tracking-wide">STARTEN</span>
                 <svg
-                  className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1"
+                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -84,13 +84,13 @@ export default function Home() {
               </div>
             </button>
 
-            <div className="w-3 bg-brand-dark rounded-sm shadow-lg" style={{ height: '120px' }}>
-              <div className="w-full h-2 bg-gray-700 rounded-t-sm"></div>
-              <div className="w-full h-2 bg-gray-600 absolute bottom-0"></div>
+            <div className="w-2.5 bg-brand-dark rounded-sm shadow-lg" style={{ height: '80px' }}>
+              <div className="w-full h-1.5 bg-gray-700 rounded-t-sm"></div>
+              <div className="w-full h-1.5 bg-gray-600 absolute bottom-0"></div>
             </div>
 
-            <div className="w-16 h-8 bg-gray-500 rounded-b-full shadow-lg border-4 border-gray-600 relative">
-              <div className="absolute inset-x-2 top-1 h-1 bg-gray-700 rounded-full"></div>
+            <div className="w-12 h-6 bg-gray-500 rounded-b-full shadow-lg border-3 border-gray-600 relative">
+              <div className="absolute inset-x-2 top-0.5 h-0.5 bg-gray-700 rounded-full"></div>
             </div>
           </div>
         </div>
