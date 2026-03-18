@@ -486,7 +486,7 @@ export default function Home() {
             <div className="flex gap-6 text-brand-light text-sm">
               <button onClick={() => navigate('/legalnotice')} className="hover:text-white transition-colors cursor-pointer">{t.footer.legal}</button>
               <button onClick={() => navigate('/privacy')} className="hover:text-white transition-colors cursor-pointer">{t.footer.privacy}</button>
-              <a href="mailto:kontakt.seeto@hotmail.com?subject=Kontakt%20über%20Website%20-%20%5BZweck%5D" className="hover:text-white transition-colors">{t.footer.contact}</a>
+              <a href="mailto:seeto@kowuma.de?subject=Kontakt%20über%20Website%20-%20%5BZweck%5D" className="hover:text-white transition-colors">{t.footer.contact}</a>
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-6 text-center text-brand-light text-sm">
