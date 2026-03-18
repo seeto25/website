@@ -94,7 +94,7 @@ export const translations = {
     },
     benefits: {
       title: 'Perfect for Organizations & Teams',
-      subtitle: 'Whether you\'re a company looking to reduce parking costs and environmental impact, or a sports team traveling to matches, Seeto provides the perfect solution for organized group transportation.',
+      subtitle: 'Whether you\'re a company looking to reduce parking costs and environmental impact, or a sports team traveling to matches, Seeto provides the perfect solution for organized carpooling.',
       corporate: {
         title: 'Corporate Teams',
         description: 'Reduce parking needs and commute costs'
