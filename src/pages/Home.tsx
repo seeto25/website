@@ -58,49 +58,71 @@ export default function Home() {
 
           <button
             onClick={() => window.location.href = BETA_URL}
-            className="relative"
+            className="relative group"
             aria-label="Zur App"
           >
-            <div className="relative pb-3">
+            <div className="relative pb-4 pt-2">
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-brand-green blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-pulse" style={{ borderRadius: '40px 40px 20px 20px' }}></div>
+              <div className="absolute inset-0 bg-brand-green blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-pulse"></div>
 
-              {/* Car body with wheel cutouts */}
-              <div className="relative bg-brand-green hover:bg-brand-dark text-white px-8 py-4 shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-3xl flex items-center gap-3 overflow-visible" style={{ borderRadius: '40px 40px 12px 12px' }}>
-                {/* Left wheel cutout - rounded bottom to match wheel */}
-                <div className="absolute bottom-0 left-7 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
-                {/* Right wheel cutout - rounded bottom to match wheel */}
-                <div className="absolute bottom-0 right-7 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
+              {/* Car silhouette container */}
+              <div className="relative transition-all duration-300 group-hover:scale-110">
+                {/* Car roof/cabin - rounded top */}
+                <div className="relative mx-auto w-32 h-10 bg-brand-green group-hover:bg-brand-dark rounded-t-3xl shadow-lg transition-colors duration-300">
+                  {/* Windshield */}
+                  <div className="absolute top-1 left-6 w-20 h-6 bg-brand-dark/30 rounded-t-2xl"></div>
+                </div>
 
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-                <span className="font-bold text-xl">Starten</span>
-                <svg
-                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </div>
+                {/* Car body - main chassis */}
+                <div className="relative w-full bg-brand-green group-hover:bg-brand-dark text-white px-8 py-3 shadow-2xl transition-colors duration-300 rounded-2xl flex items-center justify-center gap-3 overflow-visible -mt-1">
+                  {/* Left wheel cutout */}
+                  <div className="absolute bottom-0 left-8 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
+                  {/* Right wheel cutout */}
+                  <div className="absolute bottom-0 right-8 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
 
-              {/* Car wheels - smaller */}
-              <div className="absolute -bottom-1.5 left-7 w-6 h-6 bg-gray-800 rounded-full border-3 border-gray-600 shadow-lg transition-transform duration-300 group-hover:scale-110 origin-center"></div>
-              <div className="absolute -bottom-1.5 right-7 w-6 h-6 bg-gray-800 rounded-full border-3 border-gray-600 shadow-lg transition-transform duration-300 group-hover:scale-110 origin-center"></div>
+                  {/* Headlight */}
+                  <div className="absolute left-3 top-1/2 -translate-y-1/2 w-2 h-2 bg-yellow-300 rounded-full shadow-lg"></div>
 
-              {/* Wheel centers */}
-              <div className="absolute -bottom-1.5 left-7 w-6 h-6 flex items-center justify-center pointer-events-none transition-transform duration-300 group-hover:scale-110 origin-center">
-                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-              </div>
-              <div className="absolute -bottom-1.5 right-7 w-6 h-6 flex items-center justify-center pointer-events-none transition-transform duration-300 group-hover:scale-110 origin-center">
-                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+                  {/* Button content */}
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  <span className="font-bold text-lg">Starten</span>
+                  <svg
+                    className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+
+                  {/* Taillight */}
+                  <div className="absolute right-3 top-1/2 -translate-y-1/2 w-1.5 h-3 bg-red-500 rounded-sm shadow-lg"></div>
+                </div>
+
+                {/* Car wheels */}
+                <div className="absolute -bottom-2 left-8 w-6 h-6 bg-gray-900 rounded-full border-2 border-gray-700 shadow-xl">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
+                  </div>
+                  {/* Tire tread lines */}
+                  <div className="absolute top-0 left-1/2 w-0.5 h-full bg-gray-700"></div>
+                  <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-700"></div>
+                </div>
+                <div className="absolute -bottom-2 right-8 w-6 h-6 bg-gray-900 rounded-full border-2 border-gray-700 shadow-xl">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
+                  </div>
+                  {/* Tire tread lines */}
+                  <div className="absolute top-0 left-1/2 w-0.5 h-full bg-gray-700"></div>
+                  <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-700"></div>
+                </div>
               </div>
             </div>
           </button>
