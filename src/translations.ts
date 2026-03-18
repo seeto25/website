@@ -184,7 +184,7 @@ export const translations = {
       },
       step3: {
         title: 'Credits verdienen',
-        description: 'Fahrt andere und sammelt automatisch Credits' 
+        description: 'Fahrt andere und sammelt automatisch Credits'
       },
       step4: {
         title: 'Credits nutzen',
