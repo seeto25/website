@@ -12,6 +12,7 @@ export default function Home() {
   const { language, setLanguage } = useContext(LanguageContext);
   const [currentScreenshot, setCurrentScreenshot] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [ctaVisible, setCtaVisible] = useState(true);
 
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'de' : 'en');
@@ -42,49 +43,69 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-brand-lightest to-brand-light">
-      <button
-        onClick={() => window.location.href = BETA_URL}
-        className="fixed bottom-8 right-8 z-50 group"
-        aria-label="Zur App"
-      >
-        <div className="relative pb-4">
-          {/* Glow effect */}
-          <div className="absolute inset-0 bg-brand-green blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-pulse" style={{ borderRadius: '40px 40px 20px 20px' }}></div>
+      {ctaVisible && (
+        <div className="fixed bottom-8 right-8 z-50 group">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setCtaVisible(false);
+            }}
+            className="absolute -top-2 -right-2 bg-white hover:bg-red-500 text-brand-dark hover:text-white rounded-full p-1.5 shadow-lg transition-all duration-200 z-10 border border-brand-light hover:border-red-500"
+            aria-label="Schließen"
+          >
+            <X className="w-4 h-4" />
+          </button>
 
-          {/* Car body */}
-          <div className="relative bg-brand-green hover:bg-brand-dark text-white px-8 py-4 shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-3xl flex items-center gap-3" style={{ borderRadius: '40px 40px 12px 12px' }}>
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-            </svg>
-            <span className="font-bold text-xl">Starten</span>
-            <svg
-              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </div>
+          <button
+            onClick={() => window.location.href = BETA_URL}
+            className="relative"
+            aria-label="Zur App"
+          >
+            <div className="relative pb-4">
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-brand-green blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-pulse" style={{ borderRadius: '40px 40px 20px 20px' }}></div>
 
-          {/* Car wheels */}
-          <div className="absolute -bottom-2 left-6 w-8 h-8 bg-gray-800 rounded-full border-4 border-gray-600 shadow-lg transition-all duration-300 group-hover:scale-110"></div>
-          <div className="absolute -bottom-2 right-6 w-8 h-8 bg-gray-800 rounded-full border-4 border-gray-600 shadow-lg transition-all duration-300 group-hover:scale-110"></div>
+              {/* Car body with wheel cutouts */}
+              <div className="relative bg-brand-green hover:bg-brand-dark text-white px-8 py-4 shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-3xl flex items-center gap-3 overflow-visible" style={{ borderRadius: '40px 40px 12px 12px' }}>
+                {/* Left wheel cutout */}
+                <div className="absolute -bottom-0 left-6 w-8 h-4 bg-gradient-to-b from-brand-lightest to-brand-light"></div>
+                {/* Right wheel cutout */}
+                <div className="absolute -bottom-0 right-6 w-8 h-4 bg-gradient-to-b from-brand-lightest to-brand-light"></div>
 
-          {/* Wheel centers */}
-          <div className="absolute -bottom-2 left-6 w-8 h-8 flex items-center justify-center">
-            <div className="w-3 h-3 bg-gray-400 rounded-full"></div>
-          </div>
-          <div className="absolute -bottom-2 right-6 w-8 h-8 flex items-center justify-center">
-            <div className="w-3 h-3 bg-gray-400 rounded-full"></div>
-          </div>
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                <span className="font-bold text-xl">Starten</span>
+                <svg
+                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+
+              {/* Car wheels */}
+              <div className="absolute -bottom-2 left-6 w-8 h-8 bg-gray-800 rounded-full border-4 border-gray-600 shadow-lg transition-all duration-300 group-hover:scale-110"></div>
+              <div className="absolute -bottom-2 right-6 w-8 h-8 bg-gray-800 rounded-full border-4 border-gray-600 shadow-lg transition-all duration-300 group-hover:scale-110"></div>
+
+              {/* Wheel centers */}
+              <div className="absolute -bottom-2 left-6 w-8 h-8 flex items-center justify-center pointer-events-none">
+                <div className="w-3 h-3 bg-gray-400 rounded-full"></div>
+              </div>
+              <div className="absolute -bottom-2 right-6 w-8 h-8 flex items-center justify-center pointer-events-none">
+                <div className="w-3 h-3 bg-gray-400 rounded-full"></div>
+              </div>
+            </div>
+          </button>
         </div>
-      </button>
+      )}
 
       <nav className="bg-white/80 backdrop-blur-sm border-b border-brand-light sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
