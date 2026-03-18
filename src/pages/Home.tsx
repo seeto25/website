@@ -61,27 +61,30 @@ export default function Home() {
             className="relative group"
             aria-label="Zur App"
           >
-            <div className="relative pb-4 pt-2">
+            <div className="relative pb-3">
               {/* Glow effect */}
               <div className="absolute inset-0 bg-brand-green blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-pulse"></div>
 
-              {/* Car silhouette container */}
+              {/* Modern car silhouette - minimal and sleek */}
               <div className="relative transition-all duration-300 group-hover:scale-110">
-                {/* Car roof/cabin - rounded top */}
-                <div className="relative mx-auto w-32 h-10 bg-brand-green group-hover:bg-brand-dark rounded-t-3xl shadow-lg transition-colors duration-300">
-                  {/* Windshield */}
-                  <div className="absolute top-1 left-6 w-20 h-6 bg-brand-dark/30 rounded-t-2xl"></div>
-                </div>
+                {/* Car roof - modern sloped SUV style */}
+                <div className="relative mx-auto w-28 h-8 bg-brand-green group-hover:bg-brand-dark transition-colors duration-300" style={{
+                  borderTopLeftRadius: '60px',
+                  borderTopRightRadius: '20px',
+                  marginLeft: '20px'
+                }}></div>
 
-                {/* Car body - main chassis */}
-                <div className="relative w-full bg-brand-green group-hover:bg-brand-dark text-white px-8 py-3 shadow-2xl transition-colors duration-300 rounded-2xl flex items-center justify-center gap-3 overflow-visible -mt-1">
+                {/* Car body - main chassis with aerodynamic front */}
+                <div className="relative w-full bg-brand-green group-hover:bg-brand-dark text-white px-8 py-3 shadow-2xl transition-colors duration-300 flex items-center justify-center gap-3 overflow-visible -mt-1" style={{
+                  borderTopLeftRadius: '40px',
+                  borderTopRightRadius: '12px',
+                  borderBottomLeftRadius: '12px',
+                  borderBottomRightRadius: '12px'
+                }}>
                   {/* Left wheel cutout */}
-                  <div className="absolute bottom-0 left-8 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
+                  <div className="absolute bottom-0 left-8 w-7 h-3.5 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
                   {/* Right wheel cutout */}
-                  <div className="absolute bottom-0 right-8 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
-
-                  {/* Headlight */}
-                  <div className="absolute left-3 top-1/2 -translate-y-1/2 w-2 h-2 bg-yellow-300 rounded-full shadow-lg"></div>
+                  <div className="absolute bottom-0 right-8 w-7 h-3.5 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
 
                   {/* Button content */}
                   <svg
@@ -101,28 +104,11 @@ export default function Home() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
-
-                  {/* Taillight */}
-                  <div className="absolute right-3 top-1/2 -translate-y-1/2 w-1.5 h-3 bg-red-500 rounded-sm shadow-lg"></div>
                 </div>
 
-                {/* Car wheels */}
-                <div className="absolute -bottom-2 left-8 w-6 h-6 bg-gray-900 rounded-full border-2 border-gray-700 shadow-xl">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
-                  </div>
-                  {/* Tire tread lines */}
-                  <div className="absolute top-0 left-1/2 w-0.5 h-full bg-gray-700"></div>
-                  <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-700"></div>
-                </div>
-                <div className="absolute -bottom-2 right-8 w-6 h-6 bg-gray-900 rounded-full border-2 border-gray-700 shadow-xl">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
-                  </div>
-                  {/* Tire tread lines */}
-                  <div className="absolute top-0 left-1/2 w-0.5 h-full bg-gray-700"></div>
-                  <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-700"></div>
-                </div>
+                {/* Car wheels - simple green circles */}
+                <div className="absolute -bottom-1.5 left-8 w-7 h-7 bg-brand-green group-hover:bg-brand-dark rounded-full shadow-xl transition-colors duration-300"></div>
+                <div className="absolute -bottom-1.5 right-8 w-7 h-7 bg-brand-green group-hover:bg-brand-dark rounded-full shadow-xl transition-colors duration-300"></div>
               </div>
             </div>
           </button>
