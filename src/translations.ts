@@ -176,7 +176,7 @@ export const translations = {
       subtitle: 'Der Einstieg mit Seeto ist einfach und unkompliziert',
       step1: {
         title: 'Gruppe erstellen',
-        description: 'Richtet eure Organisation, euer Team oder eure Vereinsgruppe in Minuten ein'
+        description: 'Erstelle eure Organisation, euer Team oder euren Verein in Sekunden'
       },
       step2: {
         title: 'Fahrten planen',
