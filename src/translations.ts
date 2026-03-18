@@ -188,7 +188,7 @@ export const translations = {
       },
       step4: {
         title: 'Credits nutzen',
-        description: 'Gebt eure verdienten Credits aus, um als Mitfahrer bei Fahrten mitzumachen'
+        description: 'Nutze deine Credits, um bei Fahrten mitzufahren'
       }
     },
     screenshots: {
