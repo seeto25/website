@@ -58,58 +58,20 @@ export default function Home() {
 
           <button
             onClick={() => window.location.href = BETA_URL}
-            className="relative group"
+            className="relative group px-8 py-4 bg-brand-green hover:bg-brand-dark text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             aria-label="Zur App"
           >
-            <div className="relative pb-3">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-brand-green blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-pulse"></div>
-
-              {/* Modern car silhouette - minimal and sleek */}
-              <div className="relative transition-all duration-300 group-hover:scale-110">
-                {/* Car roof - modern sloped SUV style */}
-                <div className="relative mx-auto w-28 h-8 bg-brand-green group-hover:bg-brand-dark transition-colors duration-300" style={{
-                  borderTopLeftRadius: '60px',
-                  borderTopRightRadius: '20px',
-                  marginLeft: '20px'
-                }}></div>
-
-                {/* Car body - main chassis with aerodynamic front */}
-                <div className="relative w-full bg-brand-green group-hover:bg-brand-dark text-white px-8 py-3 shadow-2xl transition-colors duration-300 flex items-center justify-center gap-3 overflow-visible -mt-1" style={{
-                  borderTopLeftRadius: '40px',
-                  borderTopRightRadius: '12px',
-                  borderBottomLeftRadius: '12px',
-                  borderBottomRightRadius: '12px'
-                }}>
-                  {/* Left wheel cutout */}
-                  <div className="absolute bottom-0 left-8 w-7 h-3.5 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
-                  {/* Right wheel cutout */}
-                  <div className="absolute bottom-0 right-8 w-7 h-3.5 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
-
-                  {/* Button content */}
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                  <span className="font-bold text-lg">Starten</span>
-                  <svg
-                    className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </div>
-
-                {/* Car wheels - simple green circles */}
-                <div className="absolute -bottom-1.5 left-8 w-7 h-7 bg-brand-green group-hover:bg-brand-dark rounded-full shadow-xl transition-colors duration-300"></div>
-                <div className="absolute -bottom-1.5 right-8 w-7 h-7 bg-brand-green group-hover:bg-brand-dark rounded-full shadow-xl transition-colors duration-300"></div>
-              </div>
+            <div className="absolute inset-0 bg-brand-green blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+            <div className="relative flex items-center gap-3">
+              <span className="text-lg">Starten</span>
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </div>
           </button>
         </div>
