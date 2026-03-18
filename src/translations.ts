@@ -117,7 +117,7 @@ export const translations = {
     },
     cta: {
       title: 'Ready to Transform Your Commute?',
-      subtitle: 'Join the community of saving money and reducing their environmental impact with Seeto',
+      subtitle: 'Join the community that saves money, reduces road traffic and lowers its environmental impact with Seeto.',
       button: 'Start'
     },
     footer: {
