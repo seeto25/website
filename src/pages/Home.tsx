@@ -48,16 +48,9 @@ export default function Home() {
         aria-label="Zur App"
       >
         <div className="relative">
-          <div className="absolute inset-0 bg-brand-green rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-pulse"></div>
-          <div className="relative bg-gradient-to-br from-brand-green to-brand-dark text-white px-8 py-4 rounded-full shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-3xl flex items-center gap-3">
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-            </svg>
+          <div className="absolute inset-0 bg-brand-green blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-pulse" style={{ borderRadius: '60px 60px 20px 20px' }}></div>
+          <div className="relative bg-brand-green hover:bg-brand-dark text-white px-8 py-4 shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-3xl flex items-center gap-3" style={{ borderRadius: '60px 60px 20px 20px' }}>
+            <Car className="w-6 h-6" />
             <span className="font-bold text-xl">Starten</span>
             <svg
               className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
