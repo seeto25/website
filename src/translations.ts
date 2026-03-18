@@ -59,7 +59,7 @@ export const translations = {
       },
       step4: {
         title: 'Use Credits',
-        description: 'Spend your earned credits to join rides as a passenger'
+        description: 'Use your earned credits to join rides as a passenger'
       }
     },
     screenshots: {
