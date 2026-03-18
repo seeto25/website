@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-brand-lightest to-brand-light">
       {ctaVisible && (
-        <div className="fixed bottom-4 right-8 z-50 group">
+        <div className="fixed bottom-1 right-8 z-50 group">
           <button
             onClick={(e) => {
               e.stopPropagation();
