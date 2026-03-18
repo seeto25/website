@@ -10,7 +10,7 @@ export const translations = {
       badge: 'Fair Carsharing Made Simple',
       title: 'Share Rides.\nSave Money.\nSave the Planet.',
       description: 'Seeto revolutionizes carsharing with an innovative credit system. Drive together, earn credits, and make every journey count for your team, sports club, or organization. No extra paying, just driving together.',
-      ctaButton: 'Start Free - Beta',
+      ctaButton: 'Start - Beta Version',
       nextTrip: 'Next Trip',
       seatsAvailable: 'seats available'
     },
