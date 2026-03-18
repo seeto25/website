@@ -2,6 +2,7 @@ import { Car, Users, Leaf, TrendingUp, CreditCard, BarChart3, ChevronLeft, Chevr
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LanguageContext } from '../main';
+import { translations } from '../translations';
 
 const LOGO_PATH = '/images/seeto-logo.png';
 const BETA_URL = "https://seeto.onrender.com";
@@ -16,38 +17,20 @@ export default function Home() {
     setLanguage(language === 'en' ? 'de' : 'en');
   };
 
-  const screenshots = [
-    {
-      title: 'Home',
-      description: 'View all upcoming trips, and recent activity at a glance',
-      image: '/images/Home-zugeklappt.png'
-    },
-    {
-      title: 'Create a Trip',
-      description: 'Easily schedule new rides with destination, time, and available seats',
-      image: '/images/Home.png'
-    },
-    {
-      title: 'Browse Available Rides',
-      description: 'Find and join rides that match your schedule and route',
-      image: '/images/Home-Fahrtsuchen.png'
-    },
-    {
-      title: 'Credits & Statistics',
-      description: 'Track your earned and spent credits',
-      image: '/images/stats-fairness.png'
-    },
-      {
-    title: 'Statistics & Impact',
-    description: 'View your environmental impact and savings over time',
-    image: '/images/stats-dashboard.png'
-  },
-    {
-      title: 'Group Management',
-      description: 'Manage your team members, view group statistics, and invite new participants',
-      image: '/images/groups.png'
-    }
-  ];
+  const t = translations[language];
+
+  const screenshots = t.screenshots.items.map((item, index) => ({
+    title: item.title,
+    description: item.description,
+    image: [
+      '/images/Home-zugeklappt.png',
+      '/images/Home.png',
+      '/images/Home-Fahrtsuchen.png',
+      '/images/stats-fairness.png',
+      '/images/stats-dashboard.png',
+      '/images/groups.png'
+    ][index]
+  }));
 
   const nextScreenshot = () => {
     setCurrentScreenshot((prev) => (prev + 1) % screenshots.length);
@@ -67,9 +50,9 @@ export default function Home() {
             </button>
 
             <div className="hidden md:flex items-center gap-4">
-              <a href="#features" className="text-brand-dark hover:text-brand-green transition-colors font-medium">Features</a>
-              <a href="#how-it-works" className="text-brand-dark hover:text-brand-green transition-colors font-medium">How It Works</a>
-              <a href="#benefits" className="text-brand-dark hover:text-brand-green transition-colors font-medium">Benefits</a>
+              <a href="#features" className="text-brand-dark hover:text-brand-green transition-colors font-medium">{t.nav.features}</a>
+              <a href="#how-it-works" className="text-brand-dark hover:text-brand-green transition-colors font-medium">{t.nav.howItWorks}</a>
+              <a href="#benefits" className="text-brand-dark hover:text-brand-green transition-colors font-medium">{t.nav.benefits}</a>
               <button
                 onClick={toggleLanguage}
                 className="flex items-center gap-2 bg-brand-light hover:bg-brand text-brand-dark px-3 py-1.5 rounded-full transition-all duration-200 font-medium"
@@ -78,7 +61,7 @@ export default function Home() {
                 <span>{language === 'en' ? 'EN' : 'DE'}</span>
               </button>
               <button onClick={() => window.location.href = BETA_URL} className="bg-brand-green hover:bg-brand-dark text-white px-6 py-2.5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 font-medium">
-                Start Free (Beta)
+                {t.nav.startBeta}
               </button>
             </div>
 
@@ -106,24 +89,24 @@ export default function Home() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="block text-brand-dark hover:text-brand-green transition-colors font-medium py-2"
               >
-                Features
+                {t.nav.features}
               </a>
               <a
                 href="#how-it-works"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block text-brand-dark hover:text-brand-green transition-colors font-medium py-2"
               >
-                How It Works
+                {t.nav.howItWorks}
               </a>
               <a
                 href="#benefits"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block text-brand-dark hover:text-brand-green transition-colors font-medium py-2"
               >
-                Benefits
+                {t.nav.benefits}
               </a>
               <button onClick={() => window.location.href = BETA_URL} className="w-full bg-brand-green hover:bg-brand-dark text-white px-6 py-2.5 rounded-lg transition-all duration-300 font-medium">
-                Start Free (Beta)
+                {t.nav.startBeta}
               </button>
             </div>
           )}
@@ -134,17 +117,19 @@ export default function Home() {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
           <div>
             <div className="inline-block bg-brand-light text-brand-dark px-4 py-2 rounded-full text-sm font-semibold mb-4 md:mb-6">
-              Fair Carpooling Made Simple
+              {t.hero.badge}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-dark mb-4 md:mb-6 leading-tight">
-              Share Rides.<br />Save Money.<br />Save the Planet.
+              {t.hero.title.split('\n').map((line, i) => (
+                <span key={i}>{line}<br /></span>
+              ))}
             </h1>
             <p className="text-lg md:text-xl text-brand-dark/80 mb-6 md:mb-8 leading-relaxed">
-              Seeto revolutionizes carpooling with an innovative credit system. Drive together, earn credits, and make every journey count for your team, sports club, or organization. No extra paying, just driving together.
+              {t.hero.description}
             </p>
             <div className="flex gap-4">
               <button onClick={() => window.location.href = BETA_URL} className="bg-white hover:bg-brand-light text-brand-dark px-6 md:px-8 py-3 md:py-4 rounded-lg transition-all duration-300 border-2 border-brand-light hover:border-brand-green hover:-translate-y-0.5 font-semibold text-base md:text-lg">
-                Start Free - Beta
+                {t.hero.ctaButton}
               </button>
             </div>
           </div>
@@ -156,7 +141,7 @@ export default function Home() {
               </div>
               <div className="space-y-6">
                 <div className="bg-brand-lightest rounded-xl p-4 md:p-6 border border-brand-light">
-                  <div className="text-sm text-brand-green font-semibold mb-2">Next Trip</div>
+                  <div className="text-sm text-brand-green font-semibold mb-2">{t.hero.nextTrip}</div>
                   <div className="text-xl md:text-2xl font-bold text-brand-dark mb-1">
                       Düsseldorf Hbf → <br />
                       TH Köln Campus Deutz
@@ -168,7 +153,7 @@ export default function Home() {
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-green border-2 border-brand-dark rounded"></div>
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-green border-2 border-brand-dark rounded"></div>
                     <span className="text-brand-dark ml-2 font-medium text-sm md:text-base">
-                      3 seats available
+                      3 {t.hero.seatsAvailable}
                     </span>
                   </div>
                 </div>
@@ -181,9 +166,9 @@ export default function Home() {
       <section id="features" className="bg-white py-24 border-y border-brand-light">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-brand-dark mb-4">Why Choose Seeto?</h2>
+            <h2 className="text-4xl font-bold text-brand-dark mb-4">{t.features.title}</h2>
             <p className="text-xl text-brand-dark/80 max-w-2xl mx-auto">
-              Our innovative platform makes carpooling fair, efficient, and rewarding for everyone
+              {t.features.subtitle}
             </p>
           </div>
 
@@ -192,9 +177,9 @@ export default function Home() {
               <div className="bg-brand-green w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <CreditCard className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-4">Credit System</h3>
+              <h3 className="text-2xl font-bold text-brand-dark mb-4">{t.features.creditSystem.title}</h3>
               <p className="text-brand-dark/80 leading-relaxed">
-                No paying needed. Earn credits by driving others. Use credits to ride along. Everyone takes turns driving, making it completely fair and balanced.
+                {t.features.creditSystem.description}
               </p>
             </div>
 
@@ -202,9 +187,9 @@ export default function Home() {
               <div className="bg-brand-green w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <TrendingUp className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-4">Save Money</h3>
+              <h3 className="text-2xl font-bold text-brand-dark mb-4">{t.features.saveMoney.title}</h3>
               <p className="text-brand-dark/80 leading-relaxed">
-                No money changes hands. Share fuel costs through driving turns. Maximize vehicle capacity and minimize individual expenses.
+                {t.features.saveMoney.description}
               </p>
             </div>
 
@@ -212,9 +197,9 @@ export default function Home() {
               <div className="bg-brand-green w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Leaf className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-4">Reduce Emissions</h3>
+              <h3 className="text-2xl font-bold text-brand-dark mb-4">{t.features.reduceEmissions.title}</h3>
               <p className="text-brand-dark/80 leading-relaxed">
-                Fewer cars on the road means lower CO2 emissions. Make a real environmental impact while building community connections.
+                {t.features.reduceEmissions.description}
               </p>
             </div>
 
@@ -222,9 +207,9 @@ export default function Home() {
               <div className="bg-brand-green w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Users className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-4">Build Community</h3>
+              <h3 className="text-2xl font-bold text-brand-dark mb-4">{t.features.buildCommunity.title}</h3>
               <p className="text-brand-dark/80 leading-relaxed">
-                Connect with colleagues and teammates during commutes. Transform travel time into valuable networking and bonding opportunities.
+                {t.features.buildCommunity.description}
               </p>
             </div>
 
@@ -232,9 +217,9 @@ export default function Home() {
               <div className="bg-brand-green w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <BarChart3 className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-4">Track Progress</h3>
+              <h3 className="text-2xl font-bold text-brand-dark mb-4">{t.features.trackProgress.title}</h3>
               <p className="text-brand-dark/80 leading-relaxed">
-                Monitor your trips, credits, and environmental impact. See how much money and CO2 your group saves over time.
+                {t.features.trackProgress.description}
               </p>
             </div>
 
@@ -242,15 +227,15 @@ export default function Home() {
               <div className="bg-brand-green w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Car className="w-7 h-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-brand-dark mb-4">No Car? No Problem</h3>
+              <h3 className="text-2xl font-bold text-brand-dark mb-4">{t.features.noCar.title}</h3>
               <p className="text-brand-dark/80 leading-relaxed">
-                Students and non-car owners can purchase credits to participate. Everyone's included in the sustainable mobility solution.
+                {t.features.noCar.description}
               </p>
             </div>
           </div>
             <div className="flex justify-center">
             <button onClick={() => window.location.href = BETA_URL} className="mt-8 bg-brand-green hover:bg-brand-dark text-white px-10 py-4 rounded-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 font-semibold text-lg">
-              Start Free - Beta
+              {t.nav.startBeta}
             </button>
           </div>
         </div>
@@ -259,9 +244,9 @@ export default function Home() {
       <section id="how-it-works" className="py-24 bg-gradient-to-b from-brand-lightest to-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-brand-dark mb-4">How It Works</h2>
+            <h2 className="text-4xl font-bold text-brand-dark mb-4">{t.howItWorks.title}</h2>
             <p className="text-xl text-brand-dark/80 max-w-2xl mx-auto">
-              Getting started with Seeto is simple and straightforward
+              {t.howItWorks.subtitle}
             </p>
           </div>
 
@@ -270,9 +255,9 @@ export default function Home() {
               <div className="bg-brand-green w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg">
                 1
               </div>
-              <h3 className="text-xl font-bold text-brand-dark mb-3">Create Group</h3>
+              <h3 className="text-xl font-bold text-brand-dark mb-3">{t.howItWorks.step1.title}</h3>
               <p className="text-brand-dark/80">
-                Set up your organization, team, or club group in minutes
+                {t.howItWorks.step1.description}
               </p>
             </div>
 
@@ -280,9 +265,9 @@ export default function Home() {
               <div className="bg-brand-green w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg">
                 2
               </div>
-              <h3 className="text-xl font-bold text-brand-dark mb-3">Plan Trips</h3>
+              <h3 className="text-xl font-bold text-brand-dark mb-3">{t.howItWorks.step2.title}</h3>
               <p className="text-brand-dark/80">
-                Schedule rides with destination, time, and available seats
+                {t.howItWorks.step2.description}
               </p>
             </div>
 
@@ -290,9 +275,9 @@ export default function Home() {
               <div className="bg-brand-green w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg">
                 3
               </div>
-              <h3 className="text-xl font-bold text-brand-dark mb-3">Earn Credits</h3>
+              <h3 className="text-xl font-bold text-brand-dark mb-3">{t.howItWorks.step3.title}</h3>
               <p className="text-brand-dark/80">
-                Drive others and accumulate credits automatically
+                {t.howItWorks.step3.description}
               </p>
             </div>
 
@@ -300,9 +285,9 @@ export default function Home() {
               <div className="bg-brand-green w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-lg">
                 4
               </div>
-              <h3 className="text-xl font-bold text-brand-dark mb-3">Use Credits</h3>
+              <h3 className="text-xl font-bold text-brand-dark mb-3">{t.howItWorks.step4.title}</h3>
               <p className="text-brand-dark/80">
-                Spend credits to join rides offered by other members
+                {t.howItWorks.step4.description}
               </p>
             </div>
           </div>
@@ -310,7 +295,6 @@ export default function Home() {
           <div className="mt-20 max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl p-4 border border-brand-light">
               <div className="relative">
-                {/* white gleich farbe neben den screenshot innerhalb container */}
                 <div className="aspect-video white rounded-xl overflow-hidden">
                   <img
                     src={screenshots[currentScreenshot].image}
@@ -365,9 +349,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-brand-dark">Perfect for Organizations & Teams</h2>
+              <h2 className="text-4xl font-bold mb-6 text-brand-dark">{t.benefits.title}</h2>
               <p className="text-xl text-brand-dark/80 mb-8 leading-relaxed">
-                Whether you're a company looking to reduce parking costs and environmental impact, or a sports team traveling to matches, Seeto provides the perfect solution for organized group transportation.
+                {t.benefits.subtitle}
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -375,8 +359,8 @@ export default function Home() {
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-lg mb-1 text-brand-dark">Corporate Teams</div>
-                    <div className="text-brand-dark/70">Reduce parking needs and commute costs</div>
+                    <div className="font-semibold text-lg mb-1 text-brand-dark">{t.benefits.corporate.title}</div>
+                    <div className="text-brand-dark/70">{t.benefits.corporate.description}</div>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -384,8 +368,8 @@ export default function Home() {
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-lg mb-1 text-brand-dark">Sports Clubs</div>
-                    <div className="text-brand-dark/70">Coordinate team travel to games and practices</div>
+                    <div className="font-semibold text-lg mb-1 text-brand-dark">{t.benefits.sports.title}</div>
+                    <div className="text-brand-dark/70">{t.benefits.sports.description}</div>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -393,31 +377,31 @@ export default function Home() {
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-lg mb-1 text-brand-dark">Universities</div>
-                    <div className="text-brand-dark/70">Enable students to share rides affordably</div>
+                    <div className="font-semibold text-lg mb-1 text-brand-dark">{t.benefits.universities.title}</div>
+                    <div className="text-brand-dark/70">{t.benefits.universities.description}</div>
                   </div>
                 </li>
               </ul>
             </div>
 
             <div className="bg-white rounded-2xl p-8 border border-brand-light shadow-xl">
-              <h3 className="text-2xl font-bold mb-6 text-brand-dark">By The Numbers</h3>
+              <h3 className="text-2xl font-bold mb-6 text-brand-dark">{t.benefits.stats.title}</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <div className="text-5xl font-bold text-brand-green mb-2">2025</div>
-                  <div className="text-brand-dark/70">Launch Year</div>
+                  <div className="text-brand-dark/70">{t.benefits.stats.launchYear}</div>
                 </div>
                 <div>
                   <div className="text-5xl font-bold text-brand-green mb-2">100%</div>
-                  <div className="text-brand-dark/70">Fair Ride Sharing</div>
+                  <div className="text-brand-dark/70">{t.benefits.stats.fairSharing}</div>
                 </div>
                 <div>
                   <div className="text-5xl font-bold text-brand-green mb-2">0%</div>
-                  <div className="text-brand-dark/70">Hidden Fees</div>
+                  <div className="text-brand-dark/70">{t.benefits.stats.hiddenFees}</div>
                 </div>
                 <div>
                   <div className="text-5xl font-bold text-brand-green mb-2">1</div>
-                  <div className="text-brand-dark/70">Mission: Moving Together, Fairly</div>
+                  <div className="text-brand-dark/70">{t.benefits.stats.mission}</div>
                 </div>
               </div>
             </div>
@@ -427,13 +411,13 @@ export default function Home() {
 
       <section className="py-24 bg-gradient-to-b from-white to-brand-lightest">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-brand-dark mb-6">Ready to Transform Your Commute?</h2>
+          <h2 className="text-4xl font-bold text-brand-dark mb-6">{t.cta.title}</h2>
           <p className="text-xl text-brand-dark/80 mb-10">
-            Join the community of saving money and reducing their environmental impact with Seeto
+            {t.cta.subtitle}
           </p>
           <div className="flex justify-center">
             <button onClick={() => window.location.href = BETA_URL} className="bg-brand-green hover:bg-brand-dark text-white px-10 py-4 rounded-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 font-semibold text-lg">
-              Start Free - Beta
+              {t.cta.button}
             </button>
           </div>
         </div>
@@ -449,17 +433,17 @@ export default function Home() {
                 className="h-8 p-1 bg-white rounded-md"
               />
               <p className="text-brand-light text-sm">
-                Fair carpooling for teams and organizations
+                {t.footer.tagline}
                 </p>
             </div>
             <div className="flex gap-6 text-brand-light text-sm">
-              <button onClick={() => navigate('/legalnotice')} className="hover:text-white transition-colors cursor-pointer">Legal notice</button>
-              <button onClick={() => navigate('/privacy')} className="hover:text-white transition-colors cursor-pointer">Privacy</button>
-              <a href="mailto:kontakt.seeto@hotmail.com?subject=Kontakt%20über%20Website%20-%20%5BZweck%5D" className="hover:text-white transition-colors">Contact</a>
+              <button onClick={() => navigate('/legalnotice')} className="hover:text-white transition-colors cursor-pointer">{t.footer.legal}</button>
+              <button onClick={() => navigate('/privacy')} className="hover:text-white transition-colors cursor-pointer">{t.footer.privacy}</button>
+              <a href="mailto:kontakt.seeto@hotmail.com?subject=Kontakt%20über%20Website%20-%20%5BZweck%5D" className="hover:text-white transition-colors">{t.footer.contact}</a>
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-6 text-center text-brand-light text-sm">
-            © 2025 Seeto. All rights reserved.
+            © 2025 Seeto. {t.footer.rights}
           </div>
         </div>
       </footer>
