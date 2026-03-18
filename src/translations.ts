@@ -47,7 +47,7 @@ export const translations = {
       subtitle: 'Getting started with Seeto is simple and straightforward',
       step1: {
         title: 'Create Group',
-        description: 'Set up your organization, team, or club group in minutes'
+        description: 'Set up your organization, team, or club group in seconds'
       },
       step2: {
         title: 'Plan Trips',
