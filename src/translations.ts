@@ -138,7 +138,7 @@ export const translations = {
     hero: {
       badge: 'Faires Carpooling leicht gemacht',
       title: 'Fahrten teilen.\nGeld sparen.\nPlaneten schützen.',
-      description: 'Seeto revolutioniert Fahrgemeinschaften mit einem innovativen Kreditsystem. Fahrt zusammen, sammelt Kredite und macht jede Fahrt wertvoll für euer Team, Sportverein oder eure Organisation. Kein zusätzliches Bezahlen, einfach zusammen fahren.',
+      description: 'Seeto revolutioniert Fahrgemeinschaften mit einem innovativen Credit System. Fahrt zusammen, sammelt Credits (Punkte) und macht jede Fahrt wertvoll für euer Team, Sportverein oder eure Organisation. Kein zusätzliches Bezahlen, einfach zusammen fahren.',
       ctaButton: 'Kostenlos starten - Beta',
       nextTrip: 'Nächste Fahrt',
       seatsAvailable: 'Plätze verfügbar'
@@ -168,7 +168,7 @@ export const translations = {
       },
       noCar: {
         title: 'Kein Auto? Kein Problem',
-        description: 'Studierende und Nicht-Autobesitzer können Kredite kaufen, um teilzunehmen. Jeder ist in der nachhaltigen Mobilitätslösung eingeschlossen.'
+        description: 'Studierende und Nicht-Autobesitzer können Credits kaufen, um teilzunehmen. Jeder ist in der nachhaltigen Mobilitätslösung eingeschlossen.'
       }
     },
     howItWorks: {
@@ -183,12 +183,12 @@ export const translations = {
         description: 'Plant Fahrten mit Ziel, Uhrzeit und verfügbaren Plätzen'
       },
       step3: {
-        title: 'Kredite verdienen',
+        title: 'Credits verdienen',
         description: 'Fahrt andere und sammelt automatisch Kredite'
       },
       step4: {
-        title: 'Kredite nutzen',
-        description: 'Gebt eure verdienten Kredite aus, um als Mitfahrer bei Fahrten mitzumachen'
+        title: 'Credits nutzen',
+        description: 'Gebt eure verdienten Credits aus, um als Mitfahrer bei Fahrten mitzumachen'
       }
     },
     screenshots: {
@@ -208,7 +208,7 @@ export const translations = {
           description: 'Findet und schließt euch Fahrten an, die zu eurem Zeitplan und eurer Route passen'
         },
         {
-          title: 'Kredite & Statistiken',
+          title: 'Credits & Statistiken',
           description: 'Verfolgt eure verdienten und ausgegebenen Kredite'
         },
         {
