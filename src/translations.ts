@@ -7,7 +7,7 @@ export const translations = {
       startBeta: 'Start Free (Beta)'
     },
     hero: {
-      badge: 'Fair Carpooling Made Simple',
+      badge: 'Fair Carsharing Made Simple',
       title: 'Share Rides.\nSave Money.\nSave the Planet.',
       description: 'Seeto revolutionizes carpooling with an innovative credit system. Drive together, earn credits, and make every journey count for your team, sports club, or organization. No extra paying, just driving together.',
       ctaButton: 'Start Free - Beta',
