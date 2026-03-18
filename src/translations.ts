@@ -223,7 +223,7 @@ export const translations = {
     },
     benefits: {
       title: 'Perfekt für Organisationen & Teams',
-      subtitle: 'Ob ihr ein Unternehmen seid, Parkkosten und Umweltauswirkungen reduzieren möchtet, oder ein Sportteam, das zu Spielen fährt, Seeto bietet die perfekte Lösung für organisierte Gruppenfahrten.',
+      subtitle: 'Ob ihr ein Unternehmen seid, Parkkosten und Umweltauswirkungen reduzieren möchtet, oder ein Sportteam, das zu Spielen fährt, Seeto bietet die perfekte Lösung für organisierte Fahrgemeinschaften.',
       corporate: {
         title: 'Unternehmen',
         description: 'Reduziert Parkplatzbedarf und Pendelkosten'
