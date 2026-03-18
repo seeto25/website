@@ -126,7 +126,7 @@ Legal basis: Art. 6 (1) lit. f GDPR.</div>
 
           <div>
             <p className="text-sm text-brand-dark/60">
-              Last updated: Jan,. 2026
+              Last updated: Jan. 2026
             </p>
           </div>
         </div>
