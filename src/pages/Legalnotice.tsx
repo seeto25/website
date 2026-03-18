@@ -57,7 +57,7 @@ export default function Legalnotice() {
 
           <div>
             <p className="text-sm text-brand-dark/60">
-              Last updated: November 2025
+              Last updated: Januar 2026
             </p>
           </div>
         </div>
