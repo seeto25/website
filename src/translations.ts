@@ -147,8 +147,8 @@ export const translations = {
       title: 'Warum Seeto?',
       subtitle: 'Unsere innovative Plattform macht Carpooling fair, effizient und lohnend für alle',
       creditSystem: {
-        title: 'Kreditsystem',
-        description: 'Keine Bezahlung nötig. Verdiene Kredite, indem du andere fährst. Nutze Kredite, um mitzufahren. Jeder fährt abwechselnd, was es komplett fair und ausgewogen macht.'
+        title: 'Credits System',
+        description: 'Keine Bezahlung nötig. Verdiene Credits, indem du andere fährst. Nutze Credits, um mitzufahren. Jeder fährt abwechselnd, was es komplett fair und ausgewogen macht.'
       },
       saveMoney: {
         title: 'Geld sparen',
@@ -164,7 +164,7 @@ export const translations = {
       },
       trackProgress: {
         title: 'Fortschritt verfolgen',
-        description: 'Überwacht eure Fahrten, Kredite und Umweltauswirkungen. Seht, wie viel Geld und CO2 eure Gruppe im Laufe der Zeit spart.'
+        description: 'Überwacht eure Fahrten, Credits und Umweltauswirkungen. Seht, wie viel Geld und CO2 eure Gruppe im Laufe der Zeit spart.'
       },
       noCar: {
         title: 'Kein Auto? Kein Problem',
@@ -184,7 +184,7 @@ export const translations = {
       },
       step3: {
         title: 'Credits verdienen',
-        description: 'Fahrt andere und sammelt automatisch Kredite'
+        description: 'Fahrt andere und sammelt automatisch Credits'
       },
       step4: {
         title: 'Credits nutzen',
@@ -209,7 +209,7 @@ export const translations = {
         },
         {
           title: 'Credits & Statistiken',
-          description: 'Verfolgt eure verdienten und ausgegebenen Kredite'
+          description: 'Verfolgt eure verdienten und ausgegebenen Credits'
         },
         {
           title: 'Statistiken & Auswirkungen',
