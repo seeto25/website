@@ -1,14 +1,20 @@
-import { Car, Users, Leaf, TrendingUp, CreditCard, BarChart3, ChevronLeft, ChevronRight, CheckCircle, Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { Car, Users, Leaf, TrendingUp, CreditCard, BarChart3, ChevronLeft, ChevronRight, CheckCircle, Menu, X, Globe } from 'lucide-react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { LanguageContext } from '../main';
 
 const LOGO_PATH = '/images/seeto-logo.png';
 const BETA_URL = "https://seeto.onrender.com";
 
 export default function Home() {
   const navigate = useNavigate();
+  const { language, setLanguage } = useContext(LanguageContext);
   const [currentScreenshot, setCurrentScreenshot] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'de' : 'en');
+  };
 
   const screenshots = [
     {
@@ -60,21 +66,37 @@ export default function Home() {
               <img src={LOGO_PATH} alt="Seeto Logo" className="h-10" />
             </button>
 
-            <div className="hidden md:flex items-center gap-6">
+            <div className="hidden md:flex items-center gap-4">
               <a href="#features" className="text-brand-dark hover:text-brand-green transition-colors font-medium">Features</a>
               <a href="#how-it-works" className="text-brand-dark hover:text-brand-green transition-colors font-medium">How It Works</a>
               <a href="#benefits" className="text-brand-dark hover:text-brand-green transition-colors font-medium">Benefits</a>
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 bg-brand-light hover:bg-brand text-brand-dark px-3 py-1.5 rounded-full transition-all duration-200 font-medium"
+              >
+                <Globe className="w-4 h-4" />
+                <span>{language === 'en' ? 'EN' : 'DE'}</span>
+              </button>
               <button onClick={() => window.location.href = BETA_URL} className="bg-brand-green hover:bg-brand-dark text-white px-6 py-2.5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 font-medium">
                 Start Free (Beta)
               </button>
             </div>
 
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden text-brand-dark hover:text-brand-green transition-colors"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+            <div className="flex md:hidden items-center gap-3">
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-1 bg-brand-light hover:bg-brand text-brand-dark px-2.5 py-1.5 rounded-full transition-all duration-200 font-medium text-sm"
+              >
+                <Globe className="w-4 h-4" />
+                <span>{language === 'en' ? 'EN' : 'DE'}</span>
+              </button>
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="text-brand-dark hover:text-brand-green transition-colors"
+              >
+                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
 
           {mobileMenuOpen && (
