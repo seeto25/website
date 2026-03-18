@@ -50,7 +50,7 @@ export default function Home() {
               e.stopPropagation();
               setCtaVisible(false);
             }}
-            className="absolute top-4 right-2 bg-white hover:bg-brand-dark text-brand-dark hover:text-white rounded-full p-1 shadow-lg transition-all duration-200 z-10"
+            className="absolute top-4 right-2.2 bg-white hover:bg-brand-dark text-brand-dark hover:text-white rounded-full p-1 shadow-lg transition-all duration-200 z-10"
             aria-label="Schließen"
           >
             <X className="w-3 h-3" />
