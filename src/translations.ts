@@ -172,7 +172,7 @@ export const translations = {
       }
     },
     howItWorks: {
-      title: 'So funktioniert\'s',
+      title: 'So geht\'s',
       subtitle: 'Der Einstieg mit Seeto ist einfach und unkompliziert',
       step1: {
         title: 'Gruppe erstellen',
