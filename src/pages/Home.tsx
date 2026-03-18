@@ -59,9 +59,10 @@ export default function Home() {
           <div className="flex flex-col items-center scale-75">
             <button
               onClick={() => window.location.href = BETA_URL}
-              className="relative bg-brand-green hover:bg-brand-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-2xl border-3 border-brand-dark px-6 py-3 mb-1"
+              className="relative bg-brand-green hover:bg-brand-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-2xl border-3 border-brand-dark px-6 py-5 mb-1"
               style={{
-                clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
+                clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
+                minHeight: '90px'
               }}
               aria-label="Zur App"
             >
@@ -70,16 +71,16 @@ export default function Home() {
                   clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
                 }}
               ></div>
-              <div className="relative flex items-center gap-2">
-                <span className="text-lg tracking-wide">STARTEN</span>
+              <div className="relative flex flex-col items-center justify-center gap-1">
+                <span className="text-xl tracking-wide">STARTEN</span>
                 <svg
-                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  className="w-6 h-6 transition-transform duration-300 group-hover:translate-y-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   strokeWidth={3}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
               </div>
             </button>
