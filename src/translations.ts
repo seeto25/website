@@ -176,15 +176,15 @@ export const translations = {
       subtitle: 'Der Einstieg mit Seeto ist einfach und unkompliziert',
       step1: {
         title: 'Gruppe erstellen',
-        description: 'Erstelle eure Organisation, euer Team oder euren Verein in Sekunden'
+        description: 'Erstell deine Organisation, dein Team oder deinen Verein in Sekunden'
       },
       step2: {
         title: 'Fahrten planen',
-        description: 'Plant Fahrten mit Ziel, Uhrzeit und verfügbaren Plätzen'
+        description: 'Plane Fahrten mit Ziel, Uhrzeit und verfügbaren Plätzen'
       },
       step3: {
         title: 'Credits verdienen',
-        description: 'Fahrt andere und sammelt automatisch Credits'
+        description: 'Nimm andere mit und sammle automatisch Credits'
       },
       step4: {
         title: 'Credits nutzen',
