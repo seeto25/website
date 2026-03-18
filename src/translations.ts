@@ -133,7 +133,7 @@ export const translations = {
       features: 'Features',
       howItWorks: 'So geht\'s',
       benefits: 'Vorteile',
-      startBeta: 'Kostenlos starten (Beta)'
+      startBeta: 'Gratis Starten (Beta)'
     },
     hero: {
       badge: 'Faires Carsharing leicht gemacht',
