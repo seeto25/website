@@ -388,7 +388,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-6 text-brand-dark">{t.benefits.stats.title}</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <div className="text-5xl font-bold text-brand-green mb-2">2025</div>
+                  <div className="text-5xl font-bold text-brand-green mb-2">2026</div>
                   <div className="text-brand-dark/70">{t.benefits.stats.launchYear}</div>
                 </div>
                 <div>
@@ -443,7 +443,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-6 text-center text-brand-light text-sm">
-            © 2025 Seeto. {t.footer.rights}
+            © 2026 Seeto. {t.footer.rights}
           </div>
         </div>
       </footer>
