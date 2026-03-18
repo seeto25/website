@@ -63,7 +63,7 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-brand-green blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
             <div className="relative flex items-center gap-3">
-              <span className="text-lg">Starten</span>
+              <span className="text-lg">Let's Go</span>
               <svg
                 className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"
