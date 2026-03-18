@@ -1,4 +1,4 @@
-import { Car, Users, Leaf, TrendingUp, CreditCard, BarChart3, ChevronLeft, ChevronRight, CheckCircle, Menu, X, Globe } from 'lucide-react';
+import { Car, Users, Leaf, TrendingUp, CreditCard, BarChart3, ChevronLeft, ChevronRight, CheckCircle, Menu, X, Globe, Smartphone } from 'lucide-react';
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LanguageContext } from '../main';
@@ -73,15 +73,7 @@ export default function Home() {
               ></div>
               <div className="relative flex flex-col items-center justify-center gap-1">
                 <span className="text-xl tracking-wide">STARTEN</span>
-                <svg
-                  className="w-6 h-6 transition-transform duration-300 group-hover:translate-y-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth={3}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
+                <Smartphone className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" strokeWidth={2.5} />
               </div>
             </button>
 
