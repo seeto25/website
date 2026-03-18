@@ -247,7 +247,7 @@ export const translations = {
     cta: {
       title: 'Bereit, euren Arbeitsweg zu transformieren?',
       subtitle: 'Schließt euch der Gemeinschaft an, die Geld spart, den Straßenverkehr senkt und ihre Umweltauswirkungen mit Seeto reduziert',
-      button: 'Starte Seeto'
+      button: 'Starten'
     },
     footer: {
       tagline: 'Faires Carpooling für Teams und Organisationen',
