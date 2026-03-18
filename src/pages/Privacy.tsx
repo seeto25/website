@@ -103,7 +103,7 @@ Legal basis: Art. 6 (1) lit. f GDPR.</div>
                 <div>• Right to object to processing (Art. 21 GDPR)</div>
               </div>
               <div>To exercise these rights, you can contact us at any time:</div>
-              <div>kontakt.seeto@hotmail.com</div>
+              <div>seeto@kowuma.de</div>
             </div>
         
             <div>
