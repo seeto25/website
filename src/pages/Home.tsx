@@ -50,30 +50,49 @@ export default function Home() {
               e.stopPropagation();
               setCtaVisible(false);
             }}
-            className="absolute -top-2 -right-2 bg-white hover:bg-red-500 text-brand-dark hover:text-white rounded-full p-1.5 shadow-lg transition-all duration-200 z-10 border border-brand-light hover:border-red-500"
+            className="absolute -top-2 -right-2 bg-white hover:bg-red-500 text-brand-dark hover:text-white rounded-full p-1.5 shadow-lg transition-all duration-200 z-10 border-2 border-brand-dark hover:border-red-500"
             aria-label="Schließen"
           >
             <X className="w-4 h-4" />
           </button>
 
-          <button
-            onClick={() => window.location.href = BETA_URL}
-            className="relative group px-8 py-4 bg-brand-green hover:bg-brand-dark text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-            aria-label="Zur App"
-          >
-            <div className="absolute inset-0 bg-brand-green blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-            <div className="relative flex items-center gap-3">
-              <span className="text-lg">Starten</span>
-              <svg
-                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+          <div className="flex flex-col items-center">
+            <button
+              onClick={() => window.location.href = BETA_URL}
+              className="relative bg-red-500 hover:bg-red-600 text-white font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-2xl border-4 border-brand-dark px-8 py-4 mb-2"
+              style={{
+                clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
+              }}
+              aria-label="Zur App"
+            >
+              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+                style={{
+                  clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
+                }}
+              ></div>
+              <div className="relative flex items-center gap-3">
+                <span className="text-2xl tracking-wide">STARTEN</span>
+                <svg
+                  className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </button>
+
+            <div className="w-3 bg-brand-dark rounded-sm shadow-lg" style={{ height: '120px' }}>
+              <div className="w-full h-2 bg-gray-700 rounded-t-sm"></div>
+              <div className="w-full h-2 bg-gray-600 absolute bottom-0"></div>
             </div>
-          </button>
+
+            <div className="w-16 h-8 bg-gray-500 rounded-b-full shadow-lg border-4 border-gray-600 relative">
+              <div className="absolute inset-x-2 top-1 h-1 bg-gray-700 rounded-full"></div>
+            </div>
+          </div>
         </div>
       )}
 
