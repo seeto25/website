@@ -56,28 +56,24 @@ export default function Home() {
             <X className="w-4 h-4" />
           </button>
 
-          <div className="relative flex flex-col items-center pt-8">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2 bg-gray-400 h-16 rounded-t-sm shadow-md"></div>
-
-            <button
-              onClick={() => window.location.href = BETA_URL}
-              className="relative group px-8 py-4 bg-brand-green hover:bg-brand-dark text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-              aria-label="Zur App"
-            >
-              <div className="absolute inset-0 bg-brand-green blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
-              <div className="relative flex items-center gap-3">
-                <span className="text-lg">Starten</span>
-                <svg
-                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </div>
-            </button>
-          </div>
+          <button
+            onClick={() => window.location.href = BETA_URL}
+            className="relative group px-8 py-4 bg-brand-green hover:bg-brand-dark text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+            aria-label="Zur App"
+          >
+            <div className="absolute inset-0 bg-brand-green blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+            <div className="relative flex items-center gap-3">
+              <span className="text-lg">Starten</span>
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </div>
+          </button>
         </div>
       )}
 
