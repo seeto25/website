@@ -64,7 +64,7 @@ export const translations = {
     },
     screenshots: {
       title: 'See Seeto in Action',
-      subtitle: 'Explore our intuitive interface designed for seamless carpooling',
+      subtitle: 'Explore our intuitive interface designed for seamless carsharing',
       items: [
         {
           title: 'Home',
@@ -121,7 +121,7 @@ export const translations = {
       button: 'Start'
     },
     footer: {
-      tagline: 'Fair carpooling for teams and organizations',
+      tagline: 'Fair carsharing for teams and organizations',
       legal: 'Legal notice',
       privacy: 'Privacy',
       contact: 'Contact',
@@ -136,7 +136,7 @@ export const translations = {
       startBeta: 'Kostenlos starten (Beta)'
     },
     hero: {
-      badge: 'Faires Carpooling leicht gemacht',
+      badge: 'Faires Carsharing leicht gemacht',
       title: 'Share Fahrten.\nSave Kosten.\nSave Planet.',
       description: 'Seeto revolutioniert Fahrgemeinschaften mit einem innovativen Credit System. Fahrt zusammen, sammelt Credits (Punkte) und macht jede Fahrt wertvoll für euer Team, Sportverein oder eure Organisation. Kein zusätzliches Bezahlen, einfach zusammen fahren.',
       ctaButton: 'Kostenlos starten - Beta',
@@ -145,7 +145,7 @@ export const translations = {
     },
     features: {
       title: 'Warum Seeto?',
-      subtitle: 'Unsere innovative Plattform macht Carpooling fair, effizient und lohnend für alle',
+      subtitle: 'Unsere innovative Plattform macht Carsharing fair, effizient und lohnend für alle',
       creditSystem: {
         title: 'Credits System',
         description: 'Keine Bezahlung nötig. Verdiene Credits, indem du andere fährst. Nutze Credits, um mitzufahren. Jeder fährt abwechselnd, was es komplett fair und ausgewogen macht.'
@@ -193,7 +193,7 @@ export const translations = {
     },
     screenshots: {
       title: 'Seeto in Aktion',
-      subtitle: 'Entdeckt unsere intuitive Oberfläche, die für nahtloses Carpooling entwickelt wurde',
+      subtitle: 'Entdeckt unsere intuitive Oberfläche, die für nahtloses Carsharing entwickelt wurde',
       items: [
         {
           title: 'Startseite',
@@ -250,7 +250,7 @@ export const translations = {
       button: 'Starten'
     },
     footer: {
-      tagline: 'Faires Carpooling für Teams und Organisationen',
+      tagline: 'Faires Carsharing für Teams und Organisationen',
       legal: 'Impressum',
       privacy: 'Datenschutz',
       contact: 'Kontakt',
