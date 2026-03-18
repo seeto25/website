@@ -246,7 +246,7 @@ export const translations = {
     },
     cta: {
       title: 'Bereit, euren Arbeitsweg zu transformieren?',
-      subtitle: 'Schließt euch der Gemeinschaft an, die Geld spart und ihre Umweltauswirkungen mit Seeto reduziert',
+      subtitle: 'Schließt euch der Gemeinschaft an, die Geld spart, den Straßenverkehr senkt und ihre Umweltauswirkungen mit Seeto reduziert',
       button: 'Kostenlos starten - Beta'
     },
     footer: {
