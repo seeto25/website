@@ -137,7 +137,7 @@ export const translations = {
     },
     hero: {
       badge: 'Faires Carpooling leicht gemacht',
-      title: 'Fahrten teilen.\nFahrkosten sparen.\nFür den Planeten.',
+      title: 'Sharing von Fahrten.\nSparen.\nSchütze den Planeten.',
       description: 'Seeto revolutioniert Fahrgemeinschaften mit einem innovativen Credit System. Fahrt zusammen, sammelt Credits (Punkte) und macht jede Fahrt wertvoll für euer Team, Sportverein oder eure Organisation. Kein zusätzliches Bezahlen, einfach zusammen fahren.',
       ctaButton: 'Kostenlos starten - Beta',
       nextTrip: 'Nächste Fahrt',
