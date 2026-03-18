@@ -9,14 +9,14 @@ export const translations = {
     hero: {
       badge: 'Fair Carsharing Made Simple',
       title: 'Share Rides.\nSave Money.\nSave the Planet.',
-      description: 'Seeto revolutionizes carpooling with an innovative credit system. Drive together, earn credits, and make every journey count for your team, sports club, or organization. No extra paying, just driving together.',
+      description: 'Seeto revolutionizes carsharing with an innovative credit system. Drive together, earn credits, and make every journey count for your team, sports club, or organization. No extra paying, just driving together.',
       ctaButton: 'Start Free - Beta',
       nextTrip: 'Next Trip',
       seatsAvailable: 'seats available'
     },
     features: {
       title: 'Why Choose Seeto?',
-      subtitle: 'Our innovative platform makes carpooling fair, efficient, and rewarding for everyone',
+      subtitle: 'Our innovative platform makes carsharing fair, efficient, and rewarding for everyone',
       creditSystem: {
         title: 'Credit System',
         description: 'No paying needed. Earn credits by driving others. Use credits to ride along. Everyone takes turns driving, making it completely fair and balanced.'
