@@ -118,7 +118,7 @@ export const translations = {
     cta: {
       title: 'Ready to Transform Your Commute?',
       subtitle: 'Join the community of saving money and reducing their environmental impact with Seeto',
-      button: 'Start Free - Beta'
+      button: 'Start'
     },
     footer: {
       tagline: 'Fair carpooling for teams and organizations',
