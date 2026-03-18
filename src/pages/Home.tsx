@@ -68,9 +68,9 @@ export default function Home() {
               {/* Car body with wheel cutouts */}
               <div className="relative bg-brand-green hover:bg-brand-dark text-white px-8 py-4 shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-3xl flex items-center gap-3 overflow-visible" style={{ borderRadius: '40px 40px 12px 12px' }}>
                 {/* Left wheel cutout - rounded bottom to match wheel */}
-                <div className="absolute bottom-0 left-6 w-8 h-4 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light transition-all duration-300 group-hover:w-9 group-hover:h-5"></div>
+                <div className="absolute bottom-0 left-7 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
                 {/* Right wheel cutout - rounded bottom to match wheel */}
-                <div className="absolute bottom-0 right-6 w-8 h-4 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light transition-all duration-300 group-hover:w-9 group-hover:h-5"></div>
+                <div className="absolute bottom-0 right-7 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
 
                 <svg
                   className="w-6 h-6"
@@ -92,15 +92,15 @@ export default function Home() {
               </div>
 
               {/* Car wheels - smaller */}
-              <div className="absolute -bottom-1.5 left-6 w-8 h-8 bg-gray-800 rounded-full border-3 border-gray-600 shadow-lg transition-all duration-300 group-hover:w-9 group-hover:h-9"></div>
-              <div className="absolute -bottom-1.5 right-6 w-8 h-8 bg-gray-800 rounded-full border-3 border-gray-600 shadow-lg transition-all duration-300 group-hover:w-9 group-hover:h-9"></div>
+              <div className="absolute -bottom-1.5 left-7 w-6 h-6 bg-gray-800 rounded-full border-3 border-gray-600 shadow-lg transition-transform duration-300 group-hover:scale-110 origin-center"></div>
+              <div className="absolute -bottom-1.5 right-7 w-6 h-6 bg-gray-800 rounded-full border-3 border-gray-600 shadow-lg transition-transform duration-300 group-hover:scale-110 origin-center"></div>
 
               {/* Wheel centers */}
-              <div className="absolute -bottom-1.5 left-6 w-8 h-8 flex items-center justify-center pointer-events-none transition-all duration-300 group-hover:w-9 group-hover:h-9">
-                <div className="w-2.5 h-2.5 bg-gray-400 rounded-full transition-all duration-300 group-hover:w-3 group-hover:h-3"></div>
+              <div className="absolute -bottom-1.5 left-7 w-6 h-6 flex items-center justify-center pointer-events-none transition-transform duration-300 group-hover:scale-110 origin-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
               </div>
-              <div className="absolute -bottom-1.5 right-6 w-8 h-8 flex items-center justify-center pointer-events-none transition-all duration-300 group-hover:w-9 group-hover:h-9">
-                <div className="w-2.5 h-2.5 bg-gray-400 rounded-full transition-all duration-300 group-hover:w-3 group-hover:h-3"></div>
+              <div className="absolute -bottom-1.5 right-7 w-6 h-6 flex items-center justify-center pointer-events-none transition-transform duration-300 group-hover:scale-110 origin-center">
+                <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
               </div>
             </div>
           </button>
