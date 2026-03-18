@@ -50,10 +50,10 @@ export default function Home() {
               e.stopPropagation();
               setCtaVisible(false);
             }}
-            className="absolute top-1 right-1 bg-white hover:bg-red-500 text-brand-dark hover:text-white rounded-full p-1.5 shadow-lg transition-all duration-200 z-10 border-2 border-brand-dark hover:border-red-500"
+            className="absolute top-1 right-1 bg-white hover:bg-brand-dark text-brand-dark hover:text-white rounded-full p-1 shadow-lg transition-all duration-200 z-10"
             aria-label="Schließen"
           >
-            <X className="w-4 h-4" />
+            <X className="w-3 h-3" />
           </button>
 
           <div className="flex flex-col items-center scale-75">
