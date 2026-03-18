@@ -67,10 +67,10 @@ export default function Home() {
 
               {/* Car body with wheel cutouts */}
               <div className="relative bg-brand-green hover:bg-brand-dark text-white px-8 py-4 shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-3xl flex items-center gap-3 overflow-visible" style={{ borderRadius: '40px 40px 12px 12px' }}>
-                {/* Left wheel cutout - rounded to match wheel */}
-                <div className="absolute -bottom-0 left-7 w-6 h-3 rounded-b-full bg-gradient-to-b from-brand-lightest to-brand-light"></div>
-                {/* Right wheel cutout - rounded to match wheel */}
-                <div className="absolute -bottom-0 right-7 w-6 h-3 rounded-b-full bg-gradient-to-b from-brand-lightest to-brand-light"></div>
+                {/* Left wheel cutout - rounded top to match wheel */}
+                <div className="absolute -top-0 left-7 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
+                {/* Right wheel cutout - rounded top to match wheel */}
+                <div className="absolute -top-0 right-7 w-6 h-3 rounded-t-full bg-gradient-to-t from-brand-lightest to-brand-light"></div>
 
                 <svg
                   className="w-6 h-6"
