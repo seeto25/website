@@ -31,7 +31,7 @@ export default function Terms() {
               <div>Represented by: Shpat Haxhimusa</div>
               <div>Betzdorfer Str. 2</div>
               <div>50667 Cologne, Germany</div>
-              <div>Email: kontakt.seeto@hotmail.com</div>
+              <div>Email: seeto@kowuma.de</div>
             </div>
         
             <div>
