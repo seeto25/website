@@ -39,7 +39,7 @@ export const translations = {
       },
       noCar: {
         title: 'No Car? No Problem',
-        description: 'Students and carless user can soon purchase credits to participate. Everyone\'s included in the sustainable mobility solution.'
+        description: 'Students and carless user will soon be able to purchase credits to participate. Everyone\'s included in the sustainable mobility solution.'
       }
     },
     howItWorks: {
