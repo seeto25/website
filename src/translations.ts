@@ -131,7 +131,7 @@ export const translations = {
   de: {
     nav: {
       features: 'Features',
-      howItWorks: 'So funktioniert\'s',
+      howItWorks: 'So geht\'s',
       benefits: 'Vorteile',
       startBeta: 'Kostenlos starten (Beta)'
     },
