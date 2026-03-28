@@ -57,13 +57,13 @@ export default function Home() {
           </button>
  
           <div className="flex flex-col items-center scale-75">
-<button
-  className="relative bg-brand-green hover:bg-brand-dark text-white font-bold transition-all duration-300 hover:scale-105 shadow-2xl border-[12px] border-white px-6 py-5 mb-1"
-  style={{
-    clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
-    minHeight: '90px',
-    minWidth: '90px',
-  }}
+            <button
+              onClick={() => window.location.href = BETA_URL}
+              className="relative bg-brand-green hover:bg-brand-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-2xl border-3 border-brand-dark px-6 py-5 mb-1"
+              style={{
+                clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
+                minHeight: '90px'
+              }} 
               aria-label="Zur App"
             >
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"
