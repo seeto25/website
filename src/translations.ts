@@ -79,7 +79,7 @@ export const translations = {
           description: 'Find and join rides that match your schedule and route'
         },
         {
-          title: 'Credits & Statistics',
+          title: 'Credits & Statistic',
           description: 'Track your earned and spent credits'
         },
         {
