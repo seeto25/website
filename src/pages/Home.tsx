@@ -55,51 +55,27 @@ export default function Home() {
           >
             <X className="w-3 h-3" />
           </button>
-
-<div className="flex flex-col items-center scale-75">
-  <button
-    onClick={() => window.location.href = BETA_URL}
-    className="relative transition-all duration-300 hover:scale-105 shadow-2xl mb-1"
-    style={{
-      clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
-      minHeight: '90px',
-      minWidth: '120px',
-      background: '#1a5c2a', // dunkler Rahmen (brand-dark)
-      padding: '6px',        // ← erzeugt die dunkle Außenrand-Schicht
-    }}
-    aria-label="Zur App"
-  >
-    {/* Weiße Umrandung */}
-    <div
-      className="absolute inset-0 flex items-center justify-center"
-      style={{
-        clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
-        background: 'white',
-        margin: '5px',
-        inset: '5px',
-      }}
-    />
-    {/* Grüner Innenbereich */}
-    <div
-      className="absolute flex items-center justify-center"
-      style={{
-        clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
-        background: '#2d8a4e', // brand-green
-        inset: '10px',
-      }}
-    />
-    {/* Hover-Overlay */}
-    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-      style={{
-        clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
-      }}
-    />
-    {/* Text & Icon */}
-    <div className="relative flex flex-col items-center justify-center gap-1 px-6 py-5 text-white font-bold">
-      <span className="text-xl tracking-wide">STARTEN</span>
-      <Smartphone className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" strokeWidth={2.5} />
-    </div>
-  </button>
+ 
+          <div className="flex flex-col items-center scale-75">
+            <button
+              onClick={() => window.location.href = BETA_URL}
+              className="relative bg-brand-green hover:bg-brand-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-2xl border-3 border-brand-dark px-6 py-5 mb-1"
+              style={{
+                clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
+                minHeight: '90px'
+              }}
+              aria-label="Zur App"
+            >
+              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+                style={{
+                  clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
+                }}
+              ></div>
+              <div className="relative flex flex-col items-center justify-center gap-1">
+                <span className="text-xl tracking-wide">STARTEN</span>
+                <Smartphone className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" strokeWidth={2.5} />
+              </div>
+            </button>
 
             <div className="w-2.5 bg-brand-dark rounded-sm shadow-lg" style={{ height: '80px' }}>
               <div className="w-full h-1.5 bg-gray-700 rounded-t-sm"></div>
