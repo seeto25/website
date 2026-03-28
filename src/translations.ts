@@ -212,7 +212,7 @@ export const translations = {
           description: 'Verfolgt eure verdienten und ausgegebenen Credits'
         },
         {
-          title: 'Statistiken & Auswirkungen',
+          title: 'Statistik & Effekt',
           description: 'Seht eure Umweltauswirkungen und Ersparnisse im Laufe der Zeit'
         },
         {
