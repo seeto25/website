@@ -83,12 +83,7 @@ export default function Home() {
               </div>
             </div>
           
-            {/* UNVERÄNDERT: Pfahl */}
-            <div className="w-2.5 bg-brand-dark rounded-sm shadow-lg" style={{ height: '80px' }}>
-              <div className="w-full h-1.5 bg-gray-700 rounded-t-sm"></div>
-              <div className="w-full h-1.5 bg-gray-600 absolute bottom-0"></div>
-            </div>
-            <div className="w-12 h-6 bg-gray-500 rounded-b-full shadow-lg border-3 border-gray-600 relative">
+
               <div className="absolute inset-x-2 top-0.5 h-0.5 bg-gray-700 rounded-full"></div>
             </div>
 
