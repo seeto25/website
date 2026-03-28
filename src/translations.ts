@@ -75,7 +75,7 @@ export const translations = {
           description: 'Easily schedule new rides with destination, time, and available seats'
         },
         {
-          title: 'Browse Available Rides',
+          title: 'Search Rides',
           description: 'Find and join rides that match your schedule and route'
         },
         {
