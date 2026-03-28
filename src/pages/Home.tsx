@@ -59,33 +59,44 @@ export default function Home() {
           <div className="flex flex-col items-center scale-75">
             <button
               onClick={() => window.location.href = BETA_URL}
-              className="relative bg-brand-green hover:bg-brand-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-2xl border-3 border-brand-dark px-6 py-5 mb-1"
-              style={{
-                clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
-                minHeight: '90px'
-              }} 
-              aria-label="Zur App"
-            >
-              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                style={{
-                  clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
-                }}
-              ></div>
-              <div className="relative flex flex-col items-center justify-center gap-1">
-                <span className="text-xl tracking-wide">STARTEN</span>
-                <Smartphone className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" strokeWidth={2.5} />
-              </div>
-            </button>
+<div className="flex flex-col items-center scale-75">
+  {/* Äußerer dunkelgrüner Ring */}
+  <div
+    className="bg-brand-dark p-[6px] mb-1 shadow-2xl"
+    style={{ borderRadius: '50%' }}
+  >
+    {/* Weißer Ring */}
+    <div
+      className="bg-white p-[5px]"
+      style={{ borderRadius: '50%' }}
+    >
+      {/* Grüner Innenbereich */}
+      <button
+        onClick={() => window.location.href = BETA_URL}
+        className="relative bg-brand-green hover:bg-brand-dark text-white font-bold transition-all duration-300 hover:scale-105 flex flex-col items-center justify-center gap-1"
+        style={{
+          borderRadius: '50%',
+          width: '110px',
+          height: '110px',
+        }}
+        aria-label="Zur App"
+      >
+        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-full" />
+        <span className="text-xl tracking-wide">STARTEN</span>
+        <Smartphone className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" strokeWidth={2.5} />
+      </button>
+    </div>
+  </div>
 
-            <div className="w-2.5 bg-brand-dark rounded-sm shadow-lg" style={{ height: '80px' }}>
-              <div className="w-full h-1.5 bg-gray-700 rounded-t-sm"></div>
-              <div className="w-full h-1.5 bg-gray-600 absolute bottom-0"></div>
-            </div>
-
-            <div className="w-12 h-6 bg-gray-500 rounded-b-full shadow-lg border-3 border-gray-600 relative">
-              <div className="absolute inset-x-2 top-0.5 h-0.5 bg-gray-700 rounded-full"></div>
-            </div>
-          </div>
+  {/* Pfahl */}
+  <div className="w-2.5 bg-brand-dark rounded-sm shadow-lg" style={{ height: '80px' }}>
+    <div className="w-full h-1.5 bg-gray-700 rounded-t-sm"></div>
+    <div className="w-full h-1.5 bg-gray-600 absolute bottom-0"></div>
+  </div>
+  <div className="w-12 h-6 bg-gray-500 rounded-b-full shadow-lg border-3 border-gray-600 relative">
+    <div className="absolute inset-x-2 top-0.5 h-0.5 bg-gray-700 rounded-full"></div>
+  </div>
+</div>
         </div>
       )}
 
