@@ -63,7 +63,7 @@ export default function Home() {
               style={{
                 clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
                 minHeight: '90px'
-                    outline: '4px solid white',
+                outline: '4px solid white',
               }}
               aria-label="Zur App"
             >
