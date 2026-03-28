@@ -208,7 +208,7 @@ export const translations = {
           description: 'Findet und schließt euch Fahrten an, die zu eurem Zeitplan und eurer Route passen'
         },
         {
-          title: 'Credits & Statistiken',
+          title: 'Credits & Statistik',
           description: 'Verfolgt eure verdienten und ausgegebenen Credits'
         },
         {
