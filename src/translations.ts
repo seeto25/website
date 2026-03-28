@@ -138,7 +138,7 @@ export const translations = {
     hero: {
       badge: 'Faires Carsharing leicht gemacht',
       title: 'Share Fahrten.\nSave Kosten.\nSave Planet.',
-      description: 'Seeto revolutioniert Fahrgemeinschaften mit einem innovativen Punkte System. Fahrt zusammen, sammelt Credits (Punkte) und macht jede Fahrt wertvoll für eurem Team, Sportverein oder eurer Organisation. Kein zusätzliches Bezahlen, einfach zusammen fahren.',
+      description: 'Seeto revolutioniert Fahrgemeinschaften mit einem innovativen Punkte System. Fahrt zusammen, sammelt Credits (Punkte) und macht jede Fahrt wertvoll für euer Team, Sportverein oder Organisation. Kein zusätzliches Bezahlen, einfach zusammen fahren.',
       ctaButton: 'Start - Beta Version',
       nextTrip: 'Nächste Fahrt',
       seatsAvailable: 'Plätze verfügbar'
