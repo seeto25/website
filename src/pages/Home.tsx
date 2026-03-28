@@ -62,8 +62,9 @@ export default function Home() {
               className="relative bg-brand-green hover:bg-brand-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-2xl border-3 border-brand-dark px-6 py-5 mb-1"
               style={{
                 clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
-                minHeight: '90px'
+                minHeight: '90px',
                 outline: '4px solid white',
+                outlineOffset: '-8px'
               }}
               aria-label="Zur App"
             >
