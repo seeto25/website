@@ -56,28 +56,34 @@ export default function Home() {
             <X className="w-3 h-3" />
           </button>
  
-          <div className="flex flex-col items-center scale-75">
-            <button
-              onClick={() => window.location.href = BETA_URL}
-              className="relative bg-brand-green hover:bg-brand-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-2xl border-3 border-brand-dark px-6 py-5 mb-1"
-              style={{
-                clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
-                minHeight: '90px',
-                outline: '4px solid white',
-                outlineOffset: '-12px',
-              }}
-              aria-label="Zur App"
-            >
-              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                style={{
-                  clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)'
-                }}
-              ></div>
-              <div className="relative flex flex-col items-center justify-center gap-1">
-                <span className="text-xl tracking-wide">STARTEN</span>
-                <Smartphone className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" strokeWidth={2.5} />
-              </div>
-            </button>
+<div className="flex flex-col items-center scale-75">
+  <div
+    className="bg-white p-2 mb-1"
+    style={{
+      clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
+    }}
+  >
+    <button
+      onClick={() => window.location.href = BETA_URL}
+      className="relative bg-brand-green hover:bg-brand-dark text-white font-bold transition-all duration-300 hover:scale-105 shadow-2xl px-6 py-5"
+      style={{
+        clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
+        minHeight: '90px',
+        minWidth: '90px',
+      }}
+      aria-label="Zur App"
+    >
+      <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+        style={{
+          clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)'
+        }}
+      ></div>
+      <div className="relative flex flex-col items-center justify-center gap-1">
+        <span className="text-xl tracking-wide">STARTEN</span>
+        <Smartphone className="w-7 h-7 transition-transform duration-300 group-hover:scale-110" strokeWidth={2.5} />
+      </div>
+    </button>
+  </div>
 
             <div className="w-2.5 bg-brand-dark rounded-sm shadow-lg" style={{ height: '80px' }}>
               <div className="w-full h-1.5 bg-gray-700 rounded-t-sm"></div>
