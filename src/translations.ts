@@ -83,7 +83,7 @@ export const translations = {
           description: 'Track your earned and spent credits'
         },
         {
-          title: 'Statistics & Impact',
+          title: 'Statistic & Impact',
           description: 'View your environmental impact and savings over time'
         },
         {
