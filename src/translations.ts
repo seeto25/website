@@ -204,7 +204,7 @@ export const translations = {
           description: 'Plant ganz einfach neue Fahrten mit Ziel, Uhrzeit und verfügbaren Plätzen'
         },
         {
-          title: 'Verfügbare Fahrten durchsuchen',
+          title: 'Fahrten suchen',
           description: 'Findet und schließt euch Fahrten an, die zu eurem Zeitplan und eurer Route passen'
         },
         {
